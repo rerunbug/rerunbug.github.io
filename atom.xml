@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rerunbug.github.io</id>
     <title>Ruble</title>
-    <updated>2020-11-04T15:53:39.546Z</updated>
+    <updated>2020-11-04T15:57:47.955Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rerunbug.github.io"/>
     <link rel="self" href="https://rerunbug.github.io/atom.xml"/>
@@ -81,15 +81,15 @@ int main()
     }
 }
 </code></pre>
-<p>上面是简单的数组声明和输出。<br>
-#数组和for循环是才对出现的因为for循环可以访问数组和输出数组，就像花括号一样</p>
+<p><em>上面是简单的数组声明和输出。<br>
+数组和for循环是才对出现的因为for循环可以访问数组和输出数组，就像花括号一样</em></p>
 <p>#二维数组</p>
 <pre><code class="language-cpp">#include&lt;stdio.h&gt;
 #define hang 3
 #define lie 4
 int main()
 {
-                           //行      列
+            //行      列
     int erweishuzu[hang][lie]={
         {1,2,3,4},
         {5,6,7,8},
@@ -103,7 +103,7 @@ int main()
 
 }
 </code></pre>
-<p>#二维数组与一维数组有异曲同工之妙。看一维就要一次for循环，二维就用两次for循环最外层为行，最内层为列</p>
+<p><em>二维数组与一维数组有异曲同工之妙。看一维就要一次for循环，二维就用两次for循环最外层为行，最内层为列</em></p>
 ]]></content>
     </entry>
 </feed>
