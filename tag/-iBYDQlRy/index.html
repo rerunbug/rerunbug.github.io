@@ -1,195 +1,577 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" >
 
-<title>Gridea | Ruble</title>
+<head>
+  <meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="keywords" content="">
 <meta name="description" content="温故而知新">
+<meta name="theme-color" content="">
+<title>Ruble</title>
+<link rel="shortcut icon" href="/favicon.ico?v=1604451331271">
+<link rel="stylesheet" href="/styles/main.css">
+<link rel="stylesheet" href="/media/css/pisces.css">
 
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-<link rel="shortcut icon" href="https://rerunbug.github.io/favicon.ico?v=1604449495097">
+<link rel="stylesheet" href="/media/fonts/font-awesome.css">
+<link
+  href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
+  rel="stylesheet" type="text/css">
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-<link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
-<link rel="stylesheet" href="https://rerunbug.github.io/styles/main.css">
+<link href="/media/hljs/styles/github.css"
+  rel="stylesheet">
+
+<script src="/media/hljs/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.0/velocity.ui.min.js"></script>
+
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
 
-<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
 
+</head>
 
-<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-
-  </head>
-  <body>
-    <nav class="navbar border fixed split-nav">
-  <div class="nav-brand">
-    <h3><a href="https://rerunbug.github.io">Ruble</a></h3>
-  </div>
-  <div class="collapsible">
-    <input id="collapsible1" type="checkbox" name="collapsible1">
-    <button>
-      <label for="collapsible1">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </label>
-    </button>
-    <div class="collapsible-body">
-      <ul class="inline">
-        
-          <li>
-            
-              <a href="https://rerunbug.github.io/post/wu-xiao-jun-shi-sb" class="menu">
-                首页
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/archives" class="menu">
-                归档
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/tags" class="menu">
-                标签
-              </a>
-            
-          </li>
-        
-          <li>
-            
-              <a href="/post/about" class="menu">
-                关于
-              </a>
-            
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-    <div id="top" class="row site">
-      <div class="sm-12 md-8 col">
-        <div class="paper">
-          <h2 class="current-tag">标签: Gridea</h2>
+<body>
+  <div class="head-top-line"></div>
+  <div class="header-box">
+    
+<div class="pisces">
+  <header class="header  ">
+    <div class="blog-header box-shadow-wrapper bg-color " id="header">
+      <div class="nav-toggle" id="nav_toggle">
+        <div class="toggle-box">
+          <div class="line line-top"></div>
+          <div class="line line-center"></div>
+          <div class="line line-bottom"></div>
+        </div>
+      </div>
+      <div class="site-meta">       
+        <div class="site-title">
           
-  <article class="article">
-    <h2 class="article-title">
-      <a href="https://rerunbug.github.io/post/hello-world/">Hello World</a>
-    </h2>
-    <p class="article-meta">
-      2020-11-03
-      
-        <a href="https://rerunbug.github.io/tag/-iBYDQlRy/" class="badge secondary">
-          Gridea
-        </a>
-      
-    </p>
-    <p class="text-lead">
-      
-    </p>
-    <div class="row">
-      <a href="https://rerunbug.github.io/post/hello-world/" class="readmore-link">
-        <button>
-          Read More
-        </button>
+            <a href="/" class="brand">
+              <span>Ruble</span>
+            </a>  
+          
+        </div>
+        
+      </div>
+      <nav class="site-nav" id="site_nav">
+        <ul id="nav_ul">
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="https://rerunbug.github.io/post/wu-xiao-jun-shi-sb/" target="_self">
+                  <i class="fa fa-globe"></i> 首页
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/archives/" target="_self">
+                  <i class="fa fa-archive"></i> 归档
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/tags/" target="_self">
+                  <i class="fa fa-tags"></i> 标签
+                </a>
+              
+            </li>
+          
+            
+            
+            <li class="nav-item ">
+              
+              
+                <a href="/post/about/" target="_self">
+                  <i class="fa fa-user"></i> 关于
+                </a>
+              
+            </li>
+          
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+</div>
+
+<script type="text/javascript"> 
+ 
+  let showNav = true;
+
+  let navToggle = document.querySelector('#nav_toggle'),
+  siteNav = document.querySelector('#site_nav');
+  
+  function navClick() {
+    let sideBar = document.querySelector('.sidebar');
+    let navUl = document.querySelector('#nav_ul');
+    navToggle.classList.toggle('nav-toggle-active');
+    siteNav.classList.toggle('nav-menu-active');
+    if (siteNav.classList.contains('nav-menu-active')) {
+      siteNav.style = "height: " + (navUl.children.length * 42) +"px !important";
+    } else {
+      siteNav.style = "";
+    }
+  }
+
+  navToggle.addEventListener('click',navClick);  
+</script>
+  </div>
+  <div class="main-continer">
+    
+    <div
+      class="section-layout  pisces">
+      <div class="section-layout-wrapper">
+        <div id="sidebarMeta" class="sidebar">
+    
+<div class="sidebar-wrapper box-shadow-wrapper bg-color">
+  <div class="sidebar-item">
+    <img class="site-author-image right-motion" src="/images/avatar.png"/>
+    <p class="site-author-name"></p>
+    
+  </div>
+  <div class="sidebar-item side-item-stat right-motion">
+    <div class="sidebar-item-box">
+      <a href="/archives/">
+        
+        <span class="site-item-stat-count">2</span>
+        <span class="site-item-stat-name">文章</span>
       </a>
     </div>
-  </article>
-
-
-        </div>
-        <div class="row flex-edges">
+    <div class="sidebar-item-box">
+      <a href="">
+        <span class="site-item-stat-count">1</span>
+        <span class="site-item-stat-name">分类</span>
+      </a>
+    </div>
+    <div class="sidebar-item-box">
+      <a href="/tags/">
+        <span class="site-item-stat-count">1</span>
+        <span class="site-item-stat-name">标签</span>
+      </a>
+    </div>
+  </div>
   
-  
-</div>
-
+    
+      <div class="sidebar-item" style="border-top: 1px dotted #ccc; margin-top: 10px;">
       </div>
-      <div class="sm-12 md-4 col sidebar">
-  <div class="paper info-container">
-    <img src="https://rerunbug.github.io/images/avatar.png?v=1604449495097" class="no-responsive avatar">
-    <div class="text-muted">温故而知新</div>
-    <div class="social-container">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      最新文章
-    </div>
-    <div class="row">
-      <ul>
-        
-          
-            <li>
-              <a href="https://rerunbug.github.io/post/wu-xiao-jun-shi-sb/">吴晓俊是sb</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://rerunbug.github.io/post/hello-world/">Hello World</a>
-            </li>
-          
-        
-          
-            <li>
-              <a href="https://rerunbug.github.io/post/about/">关于</a>
-            </li>
-          
-        
-      </ul>
-    </div>
-  </div>
-  <div class="paper">
-    <div class="sidebar-title">
-      标签列表
-    </div>
-    <div class="row">
-      
-        <a href="https://rerunbug.github.io/tag/-iBYDQlRy/" class="badge secondary">
+    
+  
+  
+
+  
+
+
+</div>
+</div>
+<script>
+  let sidebarMeta = document.querySelector('#sidebarMeta');
+  let scheme = '';
+  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
+  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
+    document.addEventListener('scroll', function(e) {
+      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
+        sidebarWrapper.classList.add('home-sidebar-fixed')
+      } else {
+        sidebarWrapper.classList.remove('home-sidebar-fixed')
+      }
+    });
+  }
+  </script>
+        <div class="section-box tag-line box-shadow-wrapper">
+          <section class="section tags-section posts-expand bg-color">
+            <div class="padding-wrapper">
+  <div class="tag-timeline-box">
+    <div class="tag-timeline-wrapper">
+      <div class="tag-timeline-title">
+        <h2>
           Gridea
-        </a>
+          <small>标签</small>
+        </h2>
+      </div>
+      
+      
+      
+      
+      
+      <a href="https://rerunbug.github.io/post/hello-world/">
+        <div class="motion-warpper">
+          <div class="tag-post-node">
+            <h1>
+              11-03
+              <small>Hello World</small>
+            </h1>
+          </div>
+        </div>
+      </a>
+      
+      
+      
+      
       
     </div>
-  </div>
-  <div class="paper">
-    Powered by <a href="https://github.com/rerunbug?tab=repositories" target="_blank">Ruble</a> | <a class="rss" href="https://rerunbug.github.io/atom.xml" target="_blank">RSS</a>
   </div>
 </div>
-
+          </section>
+        </div>
+      </div>
     </div>
+    <div class="footer-box">
+  <footer class="footer">
+    <div class="copyright">
+      © 2019-2020 Theme By <a href="https://github.com/hsxyhao/gridea-theme-next" target="_blank">HsxyHao</a>
+    </div>
+    <div class="poweredby">
+      Powered by <a href="https://github.com/rerunbug?tab=repositories" target="_blank">Ruble</a>
+    </div>
+  </footer>
+  
+  
+  <div class="pisces back-to-top" id="back_to_top">
+    <i class="fa fa-arrow-up"></i>
+    
+    <span class="scrollpercent">
+      <span id="back_to_top_text">0</span>%
+    </span>
+    
+  </div>
+  
+    <div class="bg-img">
+      <img src="" />
+    </div>
+  
+  
+  
+    
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  
+</div>
+<script>
 
-<script type="application/javascript">
+  let sideBarOpen = 'sidebar-open';
+  let body = document.body;
+  let back2Top = document.querySelector('#back_to_top'),
+  back2TopText = document.querySelector('#back_to_top_text'),
+  drawerBox = document.querySelector('#drawer_box'),
+  rightSideBar = document.querySelector('.sidebar'),
+  viewport = document.querySelector('body');
 
-AOS.init();
+  function scrollAnimation(currentY, targetY) {
+   
+    let needScrollTop = targetY - currentY
+    let _currentY = currentY
+    setTimeout(() => {
+      const dist = Math.ceil(needScrollTop / 10)
+      _currentY += dist
+      window.scrollTo(_currentY, currentY)
+      if (needScrollTop > 10 || needScrollTop < -10) {
+        scrollAnimation(_currentY, targetY)
+      } else {
+        window.scrollTo(_currentY, targetY)
+      }
+    }, 1)
+  }
 
-hljs.initHighlightingOnLoad()
+  back2Top.addEventListener("click", function(e) {
+    scrollAnimation(document.scrollingElement.scrollTop, 0);
+    e.stopPropagation();
+    return false;
+  });
+  
+  window.addEventListener('scroll', function(e) {
+    let percent = document.scrollingElement.scrollTop / (document.scrollingElement.scrollHeight - document.scrollingElement.clientHeight) * 100;
+    if (percent > 1 && !back2Top.classList.contains('back-top-active')) {
+      back2Top.classList.add('back-top-active');
+    }
+    if (percent == 0) {
+      back2Top.classList.remove('back-top-active');
+    }
+    if (back2TopText) {
+      back2TopText.textContent = Math.floor(percent);
+    }
+  });
+
+  
+  let hasCacu = false;
+  window.onresize = function() {
+    if (window.width > 991) {
+      calcuHeight();
+    } else {
+      hasCacu = false;
+    }
+  }
+
+  function calcuHeight() {
+    // 动态调整站点概览高度
+    if (!hasCacu && back2Top.classList.contains('pisces') || back2Top.classList.contains('gemini')) {
+      let sideBar = document.querySelector('.sidebar');
+      let navUl = document.querySelector('#site_nav');
+      sideBar.style = 'margin-top:' + (navUl.offsetHeight + navUl.offsetTop + 15) + 'px;';
+      hasCacu = true;
+    }
+  }
+  calcuHeight();
+  
+  let open = false, MOTION_TIME = 300, RIGHT_MOVE_DIS = '320px';
+
+  if (drawerBox) {
+    let rightMotions = document.querySelectorAll('.right-motion');
+    let right = drawerBox.classList.contains('right');
+
+    let transitionDir = right ? "transition.slideRightIn" : "transition.slideLeftIn";
+
+    let openProp, closeProp;
+    if (right) {
+      openProp = {
+        paddingRight: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingRight: '0px'
+      };
+    } else {
+      openProp = {
+        paddingLeft: RIGHT_MOVE_DIS 
+      };
+      closeProp = {
+        paddingLeft: '0px'
+      };
+    }
+
+    drawerBox.onclick = function() {
+      open = !open;
+      window.Velocity(rightSideBar, 'stop');
+      window.Velocity(viewport, 'stop');
+      window.Velocity(rightMotions, 'stop');
+      if (open) {
+        window.Velocity(rightSideBar, {
+          width: RIGHT_MOVE_DIS
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, transitionDir,{ });
+          }
+        })
+        window.Velocity(viewport, openProp,{
+          duration: MOTION_TIME
+        });
+      } else {
+        window.Velocity(rightSideBar, {
+          width: '0px'
+        }, {
+          duration: MOTION_TIME,
+          begin: function() {
+            window.Velocity(rightMotions, {
+              opacity: 0
+            });
+          }
+        })
+        window.Velocity(viewport, closeProp ,{
+          duration: MOTION_TIME
+        });
+      }
+      for (let i = 0; i < drawerBox.children.length; i++) {
+        drawerBox.children[i].classList.toggle('muse-line');
+      }
+      drawerBox.classList.toggle(sideBarOpen);
+    }
+  }
+
+  // 链接跳转
+  let newWindow = ''
+  if (newWindow === 'true') {
+    let links = document.querySelectorAll('.post-body a')
+    links.forEach(item => {
+      if (!item.classList.contains('btn')) {
+        item.setAttribute("target","_blank");
+      }
+    })
+  }
+  // 代码高亮
+  hljs.initHighlightingOnLoad();
 
 </script>
+  </div>
+</body>
+<input hidden id="copy" />
+<script>
+  //拿来主义(真香)^_^，Clipboard 实现摘自掘金 https://juejin.im/post/5aefeb6e6fb9a07aa43c20af
+  window.Clipboard = (function (window, document, navigator) {
+    var textArea,
+      copy;
+
+    // 判断是不是ios端
+    function isOS() {
+      return navigator.userAgent.match(/ipad|iphone/i);
+    }
+    //创建文本元素
+    function createTextArea(text) {
+      textArea = document.createElement('textArea');
+      textArea.value = text;
+      textArea.style.width = 0;
+      textArea.style.height = 0;
+      textArea.clientHeight = 0;
+      textArea.clientWidth = 0;
+      document.body.appendChild(textArea);
+    }
+    //选择内容
+    function selectText() {
+      var range,
+        selection;
+
+      if (isOS()) {
+        range = document.createRange();
+        range.selectNodeContents(textArea);
+        selection = window.getSelection();
+        selection.removeAllRanges();
+        selection.addRange(range);
+        textArea.setSelectionRange(0, 999999);
+      } else {
+        textArea.select();
+      }
+    }
+
+    //复制到剪贴板
+    function copyToClipboard() {
+      try {
+        document.execCommand("Copy")
+      } catch (err) {
+        alert("复制错误！请手动复制！")
+      }
+      document.body.removeChild(textArea);
+    }
+
+    copy = function (text) {
+      createTextArea(text);
+      selectText();
+      copyToClipboard();
+    };
+
+    return {
+      copy: copy
+    };
+  })(window, document, navigator);
+
+  function copyCode(e) {
+    if (e.srcElement.tagName === 'SPAN' && e.srcElement.classList.contains('copy-code')) {
+      let code = e.currentTarget.querySelector('code');
+      var text = code.innerText;
+      if (e.srcElement.textContent === '复制成功') {
+        console.log('复制操作频率过高');
+        return;
+      }
+      e.srcElement.textContent = '复制成功';
+      (function (elem) {
+        setTimeout(() => {
+          if (elem.textContent === '复制成功') {
+            elem.textContent = '复制代码'
+          }
+        }, 1000);
+      })(e.srcElement)
+      Clipboard.copy(text);
+    }
+  }
+
+  let pres = document.querySelectorAll('pre');
+  pres.forEach(pre => {
+    let code = pre.querySelector('code');
+    let copyElem = document.createElement('span');
+    copyElem.classList.add('copy-code');
+    copyElem.textContent = '复制代码';
+    pre.appendChild(copyElem);
+    pre.onclick = copyCode
+  })
+</script>
+<script src="/media/js/motion.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 500
+  });
+</script>
+
+<!-- <div class="search-mask" id="search_mask">
+  <div class="search-box">
+    <div class="search-title">
+      <i class="fa fa-search"></i>
+      <div class="input-box">
+        <input type="text" placeholder="搜索">
+      </div>
+      <i class="fa fa-times-circle"></i>
+    </div>
+    <div class="result">
+      
+      <div class="item">
+        <a class="result-title" href="https://rerunbug.github.io/post/wu-xiao-jun-shi-sb/"" data-c="
+          &lt;p&gt;吴晓俊是sb&lt;/p&gt;
+">吴晓俊是sb</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://rerunbug.github.io/post/hello-world/"" data-c="
+          &lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#includ&amp;lt;stdio.h&amp;gt;
+int main()
+{
+    printf(&amp;quot;Hello World&amp;quot;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;span class=&#34;katex&#34;&gt;&lt;span class=&#34;katex-mathml&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi mathvariant=&#34;bold&#34;&gt;V&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;msub&gt;&lt;mi mathvariant=&#34;bold&#34;&gt;V&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mrow&gt;&lt;mo fence=&#34;true&#34;&gt;∣&lt;/mo&gt;&lt;mtable&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&#34;0&#34; displaystyle=&#34;false&#34;&gt;&lt;mi mathvariant=&#34;bold&#34;&gt;i&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&#34;0&#34; displaystyle=&#34;false&#34;&gt;&lt;mi mathvariant=&#34;bold&#34;&gt;j&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&#34;0&#34; displaystyle=&#34;false&#34;&gt;&lt;mi mathvariant=&#34;bold&#34;&gt;k&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&#34;0&#34; displaystyle=&#34;false&#34;&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;∂&lt;/mi&gt;&lt;mi&gt;X&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;∂&lt;/mi&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&#34;0&#34; displaystyle=&#34;false&#34;&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;∂&lt;/mi&gt;&lt;mi&gt;Y&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;∂&lt;/mi&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&#34;0&#34; displaystyle=&#34;false&#34;&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&#34;0&#34; displaystyle=&#34;false&#34;&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;∂&lt;/mi&gt;&lt;mi&gt;X&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;∂&lt;/mi&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&#34;0&#34; displaystyle=&#34;false&#34;&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;∂&lt;/mi&gt;&lt;mi&gt;Y&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mi mathvariant=&#34;normal&#34;&gt;∂&lt;/mi&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=&#34;0&#34; displaystyle=&#34;false&#34;&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;/mtable&gt;&lt;mo fence=&#34;true&#34;&gt;∣&lt;/mo&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;annotation encoding=&#34;application/x-tex&#34;&gt;\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} 
+\mathbf{i} &amp;amp; \mathbf{j} &amp;amp; \mathbf{k} \\
+\frac{\partial X}{\partial u} &amp;amp;  \frac{\partial Y}{\partial u} &amp;amp; 0 \\
+\frac{\partial X}{\partial v} &amp;amp;  \frac{\partial Y}{\partial v} &amp;amp; 0 \\
+\end{vmatrix}
+&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=&#34;katex-html&#34; aria-hidden=&#34;true&#34;&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.83611em;vertical-align:-0.15em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathbf&#34; style=&#34;margin-right:0.01597em;&#34;&gt;V&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.30110799999999993em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mbin&#34;&gt;×&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2222222222222222em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:0.83611em;vertical-align:-0.15em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathbf&#34; style=&#34;margin-right:0.01597em;&#34;&gt;V&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;msupsub&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.30110799999999993em;&#34;&gt;&lt;span style=&#34;top:-2.5500000000000003em;margin-right:0.05em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.7em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.15em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mrel&#34;&gt;=&lt;/span&gt;&lt;span class=&#34;mspace&#34; style=&#34;margin-right:0.2777777777777778em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;base&#34;&gt;&lt;span class=&#34;strut&#34; style=&#34;height:3.6802159999999997em;vertical-align:-1.590108em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;minner&#34;&gt;&lt;span class=&#34;mopen&#34;&gt;&lt;span class=&#34;delimsizing mult&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:2.08597em;&#34;&gt;&lt;span style=&#34;top:-1.05597em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.606em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;delimsizinginner delim-size1&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-1.6619700000000002em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.606em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;delimsizinginner delim-size1&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-2.26797em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.606em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;delimsizinginner delim-size1&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-2.87397em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.606em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;delimsizinginner delim-size1&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.47997em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.606em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;delimsizinginner delim-size1&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-4.08597em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.606em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;delimsizinginner delim-size1&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:1.5500299999999998em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mtable&#34;&gt;&lt;span class=&#34;col-align-c&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:2.090108em;&#34;&gt;&lt;span style=&#34;top:-4.250108em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathbf&#34;&gt;i&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.0099999999999993em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mopen nulldelimiter&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mfrac&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8801079999999999em;&#34;&gt;&lt;span style=&#34;top:-2.6550000000000002em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34; style=&#34;margin-right:0.05556em;&#34;&gt;∂&lt;/span&gt;&lt;span class=&#34;mord mathdefault mtight&#34;&gt;u&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.23em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;frac-line&#34; style=&#34;border-bottom-width:0.04em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.394em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34; style=&#34;margin-right:0.05556em;&#34;&gt;∂&lt;/span&gt;&lt;span class=&#34;mord mathdefault mtight&#34; style=&#34;margin-right:0.07847em;&#34;&gt;X&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.345em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mclose nulldelimiter&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-1.769892em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mopen nulldelimiter&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mfrac&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8801079999999999em;&#34;&gt;&lt;span style=&#34;top:-2.6550000000000002em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34; style=&#34;margin-right:0.05556em;&#34;&gt;∂&lt;/span&gt;&lt;span class=&#34;mord mathdefault mtight&#34; style=&#34;margin-right:0.03588em;&#34;&gt;v&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.23em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;frac-line&#34; style=&#34;border-bottom-width:0.04em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.394em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34; style=&#34;margin-right:0.05556em;&#34;&gt;∂&lt;/span&gt;&lt;span class=&#34;mord mathdefault mtight&#34; style=&#34;margin-right:0.07847em;&#34;&gt;X&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.345em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mclose nulldelimiter&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:1.590108em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;arraycolsep&#34; style=&#34;width:0.5em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;arraycolsep&#34; style=&#34;width:0.5em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;col-align-c&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:2.090108em;&#34;&gt;&lt;span style=&#34;top:-4.250108em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathbf&#34;&gt;j&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.0099999999999993em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mopen nulldelimiter&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mfrac&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8801079999999999em;&#34;&gt;&lt;span style=&#34;top:-2.6550000000000002em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34; style=&#34;margin-right:0.05556em;&#34;&gt;∂&lt;/span&gt;&lt;span class=&#34;mord mathdefault mtight&#34;&gt;u&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.23em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;frac-line&#34; style=&#34;border-bottom-width:0.04em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.394em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34; style=&#34;margin-right:0.05556em;&#34;&gt;∂&lt;/span&gt;&lt;span class=&#34;mord mathdefault mtight&#34; style=&#34;margin-right:0.22222em;&#34;&gt;Y&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.345em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mclose nulldelimiter&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-1.769892em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mopen nulldelimiter&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mfrac&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.8801079999999999em;&#34;&gt;&lt;span style=&#34;top:-2.6550000000000002em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34; style=&#34;margin-right:0.05556em;&#34;&gt;∂&lt;/span&gt;&lt;span class=&#34;mord mathdefault mtight&#34; style=&#34;margin-right:0.03588em;&#34;&gt;v&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.23em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;frac-line&#34; style=&#34;border-bottom-width:0.04em;&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.394em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;sizing reset-size6 size3 mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34;&gt;&lt;span class=&#34;mord mtight&#34; style=&#34;margin-right:0.05556em;&#34;&gt;∂&lt;/span&gt;&lt;span class=&#34;mord mathdefault mtight&#34; style=&#34;margin-right:0.22222em;&#34;&gt;Y&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:0.345em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mclose nulldelimiter&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:1.590108em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;arraycolsep&#34; style=&#34;width:0.5em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;arraycolsep&#34; style=&#34;width:0.5em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;col-align-c&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:2.090108em;&#34;&gt;&lt;span style=&#34;top:-4.250108em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord mathbf&#34;&gt;k&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.0099999999999993em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-1.769892em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:3em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;mord&#34;&gt;&lt;span class=&#34;mord&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:1.590108em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;mclose&#34;&gt;&lt;span class=&#34;delimsizing mult&#34;&gt;&lt;span class=&#34;vlist-t vlist-t2&#34;&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:2.08597em;&#34;&gt;&lt;span style=&#34;top:-1.05597em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.606em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;delimsizinginner delim-size1&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-1.6619700000000002em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.606em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;delimsizinginner delim-size1&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-2.26797em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.606em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;delimsizinginner delim-size1&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-2.87397em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.606em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;delimsizinginner delim-size1&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-3.47997em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.606em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;delimsizinginner delim-size1&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;top:-4.08597em;&#34;&gt;&lt;span class=&#34;pstrut&#34; style=&#34;height:2.606em;&#34;&gt;&lt;/span&gt;&lt;span class=&#34;delimsizinginner delim-size1&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-s&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;vlist-r&#34;&gt;&lt;span class=&#34;vlist&#34; style=&#34;height:1.5500299999999998em;&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;{&lt;span class=&#39;katex-error&#39; title=&#39;ParseError: KaTeX parse error: Expected &amp;#039;EOF&amp;#039;, got &amp;#039;}&amp;#039; at position 5: tep1}̲{\style{visibil…&#39;&gt;tep1}{\style{visibility:hidden}{(x+1)(x+1)}}&lt;/span&gt;&lt;/p&gt;
+">Hello World</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://rerunbug.github.io/post/about/"" data-c="
+          &lt;blockquote&gt;
+&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;关于本站-测试为了验证吴晓俊是sb开的&#34;&gt;🏠 关于本站     测试为了验证吴晓俊是sb开的&lt;/h2&gt;
+&lt;h2 id=&#34;博主是谁-ruble&#34;&gt;👨‍💻 博主是谁   Ruble&lt;/h2&gt;
+&lt;h2 id=&#34;兴趣爱好-打飞机&#34;&gt;⛹ 兴趣爱好    打飞机&lt;/h2&gt;
+&lt;h2 id=&#34;联系我呀-想啥呢&#34;&gt;📬 联系我呀  想啥呢？&lt;/h2&gt;
+">关于</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<script>
+  // var escape = "[{&#34;content&#34;:&#34;&lt;p&gt;吴晓俊是sb&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;wu-xiao-jun-shi-sb&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;吴晓俊是sb&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2020-11-03 23:51:03&#34;,&#34;dateFormat&#34;:&#34;2020-11-03&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://rerunbug.github.io/post/wu-xiao-jun-shi-sb/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:1000,&#34;words&#34;:5,&#34;minutes&#34;:1},&#34;description&#34;:&#34;吴晓俊是sb\n&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;pre&gt;&lt;code class=\&#34;language-cpp\&#34;&gt;#includ&amp;lt;stdio.h&amp;gt;\nint main()\n{\n    printf(&amp;quot;Hello World&amp;quot;);\n}\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;&lt;span class=\&#34;katex\&#34;&gt;&lt;span class=\&#34;katex-mathml\&#34;&gt;&lt;math&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;msub&gt;&lt;mi mathvariant=\&#34;bold\&#34;&gt;V&lt;/mi&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;msub&gt;&lt;mi mathvariant=\&#34;bold\&#34;&gt;V&lt;/mi&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mrow&gt;&lt;mo fence=\&#34;true\&#34;&gt;∣&lt;/mo&gt;&lt;mtable&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=\&#34;0\&#34; displaystyle=\&#34;false\&#34;&gt;&lt;mi mathvariant=\&#34;bold\&#34;&gt;i&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=\&#34;0\&#34; displaystyle=\&#34;false\&#34;&gt;&lt;mi mathvariant=\&#34;bold\&#34;&gt;j&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=\&#34;0\&#34; displaystyle=\&#34;false\&#34;&gt;&lt;mi mathvariant=\&#34;bold\&#34;&gt;k&lt;/mi&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=\&#34;0\&#34; displaystyle=\&#34;false\&#34;&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mi mathvariant=\&#34;normal\&#34;&gt;∂&lt;/mi&gt;&lt;mi&gt;X&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mi mathvariant=\&#34;normal\&#34;&gt;∂&lt;/mi&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=\&#34;0\&#34; displaystyle=\&#34;false\&#34;&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mi mathvariant=\&#34;normal\&#34;&gt;∂&lt;/mi&gt;&lt;mi&gt;Y&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mi mathvariant=\&#34;normal\&#34;&gt;∂&lt;/mi&gt;&lt;mi&gt;u&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=\&#34;0\&#34; displaystyle=\&#34;false\&#34;&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;mtr&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=\&#34;0\&#34; displaystyle=\&#34;false\&#34;&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mi mathvariant=\&#34;normal\&#34;&gt;∂&lt;/mi&gt;&lt;mi&gt;X&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mi mathvariant=\&#34;normal\&#34;&gt;∂&lt;/mi&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=\&#34;0\&#34; displaystyle=\&#34;false\&#34;&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mi mathvariant=\&#34;normal\&#34;&gt;∂&lt;/mi&gt;&lt;mi&gt;Y&lt;/mi&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mi mathvariant=\&#34;normal\&#34;&gt;∂&lt;/mi&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;mtd&gt;&lt;mstyle scriptlevel=\&#34;0\&#34; displaystyle=\&#34;false\&#34;&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/mstyle&gt;&lt;/mtd&gt;&lt;/mtr&gt;&lt;/mtable&gt;&lt;mo fence=\&#34;true\&#34;&gt;∣&lt;/mo&gt;&lt;/mrow&gt;&lt;/mrow&gt;&lt;annotation encoding=\&#34;application/x-tex\&#34;&gt;\\mathbf{V}_1 \\times \\mathbf{V}_2 =  \\begin{vmatrix} \n\\mathbf{i} &amp;amp; \\mathbf{j} &amp;amp; \\mathbf{k} \\\\\n\\frac{\\partial X}{\\partial u} &amp;amp;  \\frac{\\partial Y}{\\partial u} &amp;amp; 0 \\\\\n\\frac{\\partial X}{\\partial v} &amp;amp;  \\frac{\\partial Y}{\\partial v} &amp;amp; 0 \\\\\n\\end{vmatrix}\n&lt;/annotation&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;span class=\&#34;katex-html\&#34; aria-hidden=\&#34;true\&#34;&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.83611em;vertical-align:-0.15em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord mathbf\&#34; style=\&#34;margin-right:0.01597em;\&#34;&gt;V&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;msupsub\&#34;&gt;&lt;span class=\&#34;vlist-t vlist-t2\&#34;&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:0.30110799999999993em;\&#34;&gt;&lt;span style=\&#34;top:-2.5500000000000003em;margin-right:0.05em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.7em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;sizing reset-size6 size3 mtight\&#34;&gt;&lt;span class=\&#34;mord mtight\&#34;&gt;1&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-s\&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:0.15em;\&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2222222222222222em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mbin\&#34;&gt;×&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2222222222222222em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:0.83611em;vertical-align:-0.15em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord mathbf\&#34; style=\&#34;margin-right:0.01597em;\&#34;&gt;V&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;msupsub\&#34;&gt;&lt;span class=\&#34;vlist-t vlist-t2\&#34;&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:0.30110799999999993em;\&#34;&gt;&lt;span style=\&#34;top:-2.5500000000000003em;margin-right:0.05em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.7em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;sizing reset-size6 size3 mtight\&#34;&gt;&lt;span class=\&#34;mord mtight\&#34;&gt;2&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-s\&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:0.15em;\&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mrel\&#34;&gt;=&lt;/span&gt;&lt;span class=\&#34;mspace\&#34; style=\&#34;margin-right:0.2777777777777778em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;base\&#34;&gt;&lt;span class=\&#34;strut\&#34; style=\&#34;height:3.6802159999999997em;vertical-align:-1.590108em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;minner\&#34;&gt;&lt;span class=\&#34;mopen\&#34;&gt;&lt;span class=\&#34;delimsizing mult\&#34;&gt;&lt;span class=\&#34;vlist-t vlist-t2\&#34;&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:2.08597em;\&#34;&gt;&lt;span style=\&#34;top:-1.05597em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.606em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;delimsizinginner delim-size1\&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-1.6619700000000002em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.606em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;delimsizinginner delim-size1\&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-2.26797em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.606em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;delimsizinginner delim-size1\&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-2.87397em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.606em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;delimsizinginner delim-size1\&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-3.47997em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.606em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;delimsizinginner delim-size1\&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-4.08597em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.606em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;delimsizinginner delim-size1\&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-s\&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:1.5500299999999998em;\&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mtable\&#34;&gt;&lt;span class=\&#34;col-align-c\&#34;&gt;&lt;span class=\&#34;vlist-t vlist-t2\&#34;&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:2.090108em;\&#34;&gt;&lt;span style=\&#34;top:-4.250108em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord mathbf\&#34;&gt;i&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-3.0099999999999993em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mopen nulldelimiter\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mfrac\&#34;&gt;&lt;span class=\&#34;vlist-t vlist-t2\&#34;&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:0.8801079999999999em;\&#34;&gt;&lt;span style=\&#34;top:-2.6550000000000002em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;sizing reset-size6 size3 mtight\&#34;&gt;&lt;span class=\&#34;mord mtight\&#34;&gt;&lt;span class=\&#34;mord mtight\&#34; style=\&#34;margin-right:0.05556em;\&#34;&gt;∂&lt;/span&gt;&lt;span class=\&#34;mord mathdefault mtight\&#34;&gt;u&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-3.23em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;frac-line\&#34; style=\&#34;border-bottom-width:0.04em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-3.394em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;sizing reset-size6 size3 mtight\&#34;&gt;&lt;span class=\&#34;mord mtight\&#34;&gt;&lt;span class=\&#34;mord mtight\&#34; style=\&#34;margin-right:0.05556em;\&#34;&gt;∂&lt;/span&gt;&lt;span class=\&#34;mord mathdefault mtight\&#34; style=\&#34;margin-right:0.07847em;\&#34;&gt;X&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-s\&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:0.345em;\&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;mclose nulldelimiter\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-1.769892em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mopen nulldelimiter\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mfrac\&#34;&gt;&lt;span class=\&#34;vlist-t vlist-t2\&#34;&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:0.8801079999999999em;\&#34;&gt;&lt;span style=\&#34;top:-2.6550000000000002em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;sizing reset-size6 size3 mtight\&#34;&gt;&lt;span class=\&#34;mord mtight\&#34;&gt;&lt;span class=\&#34;mord mtight\&#34; style=\&#34;margin-right:0.05556em;\&#34;&gt;∂&lt;/span&gt;&lt;span class=\&#34;mord mathdefault mtight\&#34; style=\&#34;margin-right:0.03588em;\&#34;&gt;v&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-3.23em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;frac-line\&#34; style=\&#34;border-bottom-width:0.04em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-3.394em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;sizing reset-size6 size3 mtight\&#34;&gt;&lt;span class=\&#34;mord mtight\&#34;&gt;&lt;span class=\&#34;mord mtight\&#34; style=\&#34;margin-right:0.05556em;\&#34;&gt;∂&lt;/span&gt;&lt;span class=\&#34;mord mathdefault mtight\&#34; style=\&#34;margin-right:0.07847em;\&#34;&gt;X&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-s\&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:0.345em;\&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;mclose nulldelimiter\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-s\&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:1.590108em;\&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;arraycolsep\&#34; style=\&#34;width:0.5em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;arraycolsep\&#34; style=\&#34;width:0.5em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;col-align-c\&#34;&gt;&lt;span class=\&#34;vlist-t vlist-t2\&#34;&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:2.090108em;\&#34;&gt;&lt;span style=\&#34;top:-4.250108em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord mathbf\&#34;&gt;j&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-3.0099999999999993em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mopen nulldelimiter\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mfrac\&#34;&gt;&lt;span class=\&#34;vlist-t vlist-t2\&#34;&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:0.8801079999999999em;\&#34;&gt;&lt;span style=\&#34;top:-2.6550000000000002em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;sizing reset-size6 size3 mtight\&#34;&gt;&lt;span class=\&#34;mord mtight\&#34;&gt;&lt;span class=\&#34;mord mtight\&#34; style=\&#34;margin-right:0.05556em;\&#34;&gt;∂&lt;/span&gt;&lt;span class=\&#34;mord mathdefault mtight\&#34;&gt;u&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-3.23em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;frac-line\&#34; style=\&#34;border-bottom-width:0.04em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-3.394em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;sizing reset-size6 size3 mtight\&#34;&gt;&lt;span class=\&#34;mord mtight\&#34;&gt;&lt;span class=\&#34;mord mtight\&#34; style=\&#34;margin-right:0.05556em;\&#34;&gt;∂&lt;/span&gt;&lt;span class=\&#34;mord mathdefault mtight\&#34; style=\&#34;margin-right:0.22222em;\&#34;&gt;Y&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-s\&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:0.345em;\&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;mclose nulldelimiter\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-1.769892em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mopen nulldelimiter\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mfrac\&#34;&gt;&lt;span class=\&#34;vlist-t vlist-t2\&#34;&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:0.8801079999999999em;\&#34;&gt;&lt;span style=\&#34;top:-2.6550000000000002em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;sizing reset-size6 size3 mtight\&#34;&gt;&lt;span class=\&#34;mord mtight\&#34;&gt;&lt;span class=\&#34;mord mtight\&#34; style=\&#34;margin-right:0.05556em;\&#34;&gt;∂&lt;/span&gt;&lt;span class=\&#34;mord mathdefault mtight\&#34; style=\&#34;margin-right:0.03588em;\&#34;&gt;v&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-3.23em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;frac-line\&#34; style=\&#34;border-bottom-width:0.04em;\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-3.394em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;sizing reset-size6 size3 mtight\&#34;&gt;&lt;span class=\&#34;mord mtight\&#34;&gt;&lt;span class=\&#34;mord mtight\&#34; style=\&#34;margin-right:0.05556em;\&#34;&gt;∂&lt;/span&gt;&lt;span class=\&#34;mord mathdefault mtight\&#34; style=\&#34;margin-right:0.22222em;\&#34;&gt;Y&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-s\&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:0.345em;\&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;mclose nulldelimiter\&#34;&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-s\&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:1.590108em;\&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;arraycolsep\&#34; style=\&#34;width:0.5em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;arraycolsep\&#34; style=\&#34;width:0.5em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;col-align-c\&#34;&gt;&lt;span class=\&#34;vlist-t vlist-t2\&#34;&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:2.090108em;\&#34;&gt;&lt;span style=\&#34;top:-4.250108em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord mathbf\&#34;&gt;k&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-3.0099999999999993em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord\&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-1.769892em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:3em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;mord\&#34;&gt;&lt;span class=\&#34;mord\&#34;&gt;0&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-s\&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:1.590108em;\&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;mclose\&#34;&gt;&lt;span class=\&#34;delimsizing mult\&#34;&gt;&lt;span class=\&#34;vlist-t vlist-t2\&#34;&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:2.08597em;\&#34;&gt;&lt;span style=\&#34;top:-1.05597em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.606em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;delimsizinginner delim-size1\&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-1.6619700000000002em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.606em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;delimsizinginner delim-size1\&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-2.26797em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.606em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;delimsizinginner delim-size1\&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-2.87397em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.606em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;delimsizinginner delim-size1\&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-3.47997em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.606em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;delimsizinginner delim-size1\&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=\&#34;top:-4.08597em;\&#34;&gt;&lt;span class=\&#34;pstrut\&#34; style=\&#34;height:2.606em;\&#34;&gt;&lt;/span&gt;&lt;span class=\&#34;delimsizinginner delim-size1\&#34;&gt;&lt;span&gt;∣&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-s\&#34;&gt;​&lt;/span&gt;&lt;/span&gt;&lt;span class=\&#34;vlist-r\&#34;&gt;&lt;span class=\&#34;vlist\&#34; style=\&#34;height:1.5500299999999998em;\&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;{&lt;span class=&#39;katex-error&#39; title=&#39;ParseError: KaTeX parse error: Expected &amp;#039;EOF&amp;#039;, got &amp;#039;}&amp;#039; at position 5: tep1}̲{\\style{visibil…&#39;&gt;tep1}{\\style{visibility:hidden}{(x+1)(x+1)}}&lt;/span&gt;&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;hello-world&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;Hello World&#34;,&#34;tags&#34;:[{&#34;name&#34;:&#34;Gridea&#34;,&#34;slug&#34;:&#34;-iBYDQlRy&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://rerunbug.github.io/tag/-iBYDQlRy/&#34;}],&#34;date&#34;:&#34;2020-11-03 23:07:16&#34;,&#34;dateFormat&#34;:&#34;2020-11-03&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://rerunbug.github.io/post/hello-world/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:33000,&#34;words&#34;:89,&#34;minutes&#34;:1},&#34;description&#34;:&#34;#includ&amp;lt;stdio.h&amp;gt;\nint main()\n{\n    printf(&amp;quot;Hello World&amp;quot;);\n}\n\nV1×V2=∣ijk∂X∂u∂Y∂u0∂X∂v∂Y∂v0∣\\mathbf{V}_1 \\t...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;h2 id=\&#34;关于本站-测试为了验证吴晓俊是sb开的\&#34;&gt;🏠 关于本站     测试为了验证吴晓俊是sb开的&lt;/h2&gt;\n&lt;h2 id=\&#34;博主是谁-ruble\&#34;&gt;👨‍💻 博主是谁   Ruble&lt;/h2&gt;\n&lt;h2 id=\&#34;兴趣爱好-打飞机\&#34;&gt;⛹ 兴趣爱好    打飞机&lt;/h2&gt;\n&lt;h2 id=\&#34;联系我呀-想啥呢\&#34;&gt;📬 联系我呀  想啥呢？&lt;/h2&gt;\n&#34;,&#34;fileName&#34;:&#34;about&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;关于&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2019-01-25 19:09:48&#34;,&#34;dateFormat&#34;:&#34;2019-01-25&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://rerunbug.github.io/post/about/&#34;,&#34;hideInList&#34;:true,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:10000,&#34;words&#34;:51,&#34;minutes&#34;:1},&#34;description&#34;:&#34;\n欢迎来到我的小站呀，很高兴遇见你！🤝\n\n🏠 关于本站     测试为了验证吴晓俊是sb开的\n👨‍💻 博主是谁   Ruble\n⛹ 兴趣爱好    打飞机\n📬 联系我呀  想啥呢？\n...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99-%E6%B5%8B%E8%AF%95%E4%B8%BA%E4%BA%86%E9%AA%8C%E8%AF%81%E5%90%B4%E6%99%93%E4%BF%8A%E6%98%AFsb%E5%BC%80%E7%9A%84\&#34;&gt;🏠 关于本站     测试为了验证吴晓俊是sb开的&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81-ruble\&#34;&gt;👨‍💻 博主是谁   Ruble&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD-%E6%89%93%E9%A3%9E%E6%9C%BA\&#34;&gt;⛹ 兴趣爱好    打飞机&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80-%E6%83%B3%E5%95%A5%E5%91%A2\&#34;&gt;📬 联系我呀  想啥呢？&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;}]";
+  // var json = escape.substr(1, escape.length - 2);
+  // var datas = json.split(',');
+  // for (let i=0; i < datas.length; i++) {
+  //   let item = datas[i];
+  //   let attrs = item.split('34;:&#34')
+  //   debugger
+  //   console.log(datas[i])
+  // }
+  let escapeMap = new Map();
+  escapeMap.set('&#34;', '"');
+  escapeMap.set('&gt;', '>');
+  escapeMap.set('&#39;', "'");
+  escapeMap.set('&lt;', '<');
+  escapeMap.set('&quot;', '"');
+  escapeMap.set('&amp;', '&');
+</script> -->
 
 
 
-
-  </body>
 </html>
