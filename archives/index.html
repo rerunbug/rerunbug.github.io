@@ -9,7 +9,7 @@
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
 <title>Ruble</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1604500737034">
+<link rel="shortcut icon" href="/favicon.ico?v=1604501235676">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
 
@@ -163,6 +163,12 @@
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
     <p class="site-author-name">Ruble</p>
+    
+    <div class="site-description right-motion">
+      
+        <p id="binft">只是个大闲人，没别的本事，爱吹牛皮</p>
+      
+    </div>
     
   </div>
   <div class="sidebar-item side-item-stat right-motion">
@@ -326,32 +332,6 @@
   <div id="landlord" style="left: 5px;bottom: px;"
     data-key="">
     <canvas id="live2d" width="500" height="560" class="live2d"></canvas>
-    
-
-      <div class="message" style="opacity:0"></div>
-      <div class="live_talk_input_body">
-        <div class="live_talk_input_name_body">
-          <input name="name" type="text" class="live_talk_name white_input" id="AIuserName" autocomplete="off"
-            placeholder="你的名字" />
-        </div>
-        <div class="live_talk_input_text_body">
-          <input name="talk" type="text" class="live_talk_talk white_input" id="AIuserText" autocomplete="off"
-            placeholder="要和我聊什么呀？" />
-          <button type="button" class="live_talk_send_btn" id="talk_send">发送</button>
-        </div>
-      </div>
-      <input name="live_talk" id="live_talk" value="1" type="hidden" />
-      <div class="live_ico_box">
-        <div class="live_ico_item type_info" id="showInfoBtn"></div>
-        <div class="live_ico_item type_talk" id="showTalkBtn"></div>
-        
-        <div class="live_ico_item type_youdu" id="youduButton"></div>
-        <div class="live_ico_item type_quit" id="hideButton"></div>
-        <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
-        <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
-        <input id="duType" value="douqilai" type="hidden">
-        
-      </div>
     
   </div>
 </div>
@@ -861,48 +841,6 @@
 </script>
   
   
-    
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
-  <div class="aplayer" id="aplayer"></div>
-  <script>
-  let musics = JSON.parse('[]');
-  let mediaMusic = [];
-  for (let i = 0; i < musics.length; i++) {
-    let item = musics[i];
-    mediaMusic.push({
-      name: item.musicName,
-      artist: item.author,
-      url: item.musicLink,
-      lrc: item.lrc,
-      cover: item.cover
-    });
-  }
-
-  const ap = new APlayer({
-      container: document.getElementById('aplayer'),
-      fixed: true,
-      lrcType: 3,
-      listFolded: false,
-      listMaxHeight: 90,
-      audio: mediaMusic
-  });
-  window.addEventListener('load', function() {
-    let postBody = document.querySelector('#post_body');
-    let hs = ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'];
-    postBody && hs.forEach(h => {
-      let helems = postBody.querySelectorAll(h);
-      if (helems.length > 0) {
-        helems.forEach(elem => {
-          elem.id = encodeURI(elem.id);
-        })
-      }
-    })
-  })
-  </script>
-
-
-  
 </div>
 <script>
 
@@ -1140,6 +1078,13 @@
   })
 </script>
 <script src="/media/js/motion.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+<script>
+  var scroll = new SmoothScroll('a[href*="#"]', {
+    speed: 500
+  });
+</script>
 
 <!-- <div class="search-mask" id="search_mask">
   <div class="search-box">
