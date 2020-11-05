@@ -8,7 +8,7 @@
 <meta name="keywords" content="个人领悟，茶余饭后">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
-<title>Ruble</title>
+<title>数组 | Ruble</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1604540071143">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
@@ -29,6 +29,8 @@
 
 
 
+  <meta name="description" content="数组" />
+  <meta name="keywords" content="C" />
 </head>
 
 <body>
@@ -156,8 +158,23 @@
     <div
       class="section-layout gemini ">
       <div class="section-layout-wrapper">
-        <div id="sidebarMeta" class="sidebar">
-    
+        
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body gemini" id="sidebar_body">
+        
+          
+            
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -205,55 +222,209 @@
 
 
 </div>
+          
+        
+      </div>
+    </div>
+  
 </div>
 <script>
-  let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'gemini';
-  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
-  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
-    document.addEventListener('scroll', function(e) {
-      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
-        sidebarWrapper.classList.add('home-sidebar-fixed')
-      } else {
-        sidebarWrapper.classList.remove('home-sidebar-fixed')
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
       }
-    });
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
   }
-  </script>
-        <div class="section-box gemini box-shadow-wrapper">
-          <section class="friends-section bg-color slide-down-in">
-            <div class="firends-box">
-              <h1 class="firends-title" itemprop="name headline">友情链接</h1>
-              
-              
-              
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://rerunbug.github.io/hello-world/">
+      数组
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2020-11-03</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-folder-o"></i>
+      <span class="pc-show">分类于</span>
+      
+      
+      <a href="https://rerunbug.github.io/aSEJh56re/">
+        <span>C</span>
+      </a>
+      
+      
+    </span>
+    <span class="post-meta-divider">|</span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>1分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>226<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+            <div class="post-body next-md-body" id="post_body">
+              <p>#数组与指针是有一种共通的关系，指针可以当数组来用，反正总的来说都是内存 内存</p>
+<blockquote>
+<p>首先，先声明一下数组类型</p>
+</blockquote>
+<pre><code class="language-cpp">#include&lt;stdio.h&gt;
+#define size 4
+int main()
+{
+    int shuzu[size]={1,2,3,4};
+    int i;
+    for(i=0;i&lt;size;i++){
+        printf(&quot;%d&quot;,shuzu[i]);
+    }
+}
+</code></pre>
+<p><em>上面是简单的数组声明和输出。<br>
+数组和for循环是才对出现的因为for循环可以访问数组和输出数组，就像花括号一样</em></p>
+<p>#二维数组</p>
+<pre><code class="language-cpp">#include&lt;stdio.h&gt;
+#define hang 3
+#define lie 4
+int main()
+{
+            //行      列
+    int erweishuzu[hang][lie]={
+        {1,2,3,4},
+        {5,6,7,8},
+        {9,10,11,12}//三行四列
+    }
+    int h,l;
+    for (h=0;h&lt;hang;h++){
+        for(l=0;l&lt;lie;l++){
+        }
+    }
+
+}
+</code></pre>
+<p><em>二维数组与一维数组有异曲同工之妙。看一维就要一次for循环，二维就用两次for循环最外层为行，最内层为列</em></p>
+
             </div>
-            <hr>
-            <div style="text-align:center">
-              <span class="with-love">
-                <i class="fa fa-heart"></i>
-              </span>
-              留言添加友链
-              <span class="with-love">
-                <i class="fa fa-heart"></i>
-              </span>
-            </div>
-            <hr>
-            <div class="friends-note">
-              <p><strong>友链格式：</strong></p>
-              <ul>
-                <li>网站名称：枫糖</li>
-                <li>网站地址：<a href="https://blog.maplesugar.space" data-pjax-state="">https://blog.maplesugar.space</a>
-                </li>
-                <li> 网站描述：From rookie to master</li>
-                <li> 网站 Logo / 头像：<a href="https://blog.maplesugar.space/uploads/maple-leaf-avatar.jpg"
-                    data-pjax-state="">https://blog.maplesugar.space/uploads/maple-leaf-avatar.jpg</a></li>
-              </ul>
-            </div>
+            <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Ruble
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://rerunbug.github.io/hello-world/" title="数组">https://rerunbug.github.io/hello-world/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+      <a href="https://rerunbug.github.io/aSEJh56re/"># C</a>
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+        <i class="fa fa-chevron-left"></i>
+        <a class="nav-pc-next" title="吴晓俊是sb" href="https://rerunbug.github.io/wu-xiao-jun-shi-sb/">吴晓俊是sb</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="吴晓俊是sb" href="https://rerunbug.github.io/wu-xiao-jun-shi-sb/">上一篇</a>
+      
+    </div>
+    <div class="nav-next">
+      
+    </div>
+  </div>
+</div>
             
   
 
-          </section>
+          </div>
         </div>
       </div>
     </div>
@@ -969,6 +1140,36 @@
   hljs.initHighlightingOnLoad();
 
 </script>
+    <div class="light-box" id="light_box"></div>
+<script>
+  let imgs = document.querySelectorAll('.post-body img');
+  let lightBox = document.querySelector('#light_box');
+  lightBox.addEventListener('mousedown', (e) => {
+    e.preventDefault()
+  })
+  lightBox.addEventListener('mousewheel', (e) => {
+    e.preventDefault()
+  })
+  let width = window.innerWidth * 0.8;
+  lightBox.onclick = () => {
+    let img = lightBox.querySelector('img');
+    lightBox.style = '';
+    img && img.remove();
+  }
+  imgs.forEach(item => {
+    item.onclick = function (e) {
+      let lightImg = document.createElement('img');
+      lightImg.src = this.src;
+      lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
+      lightImg.style = `width: ${width}px; border: 1px solid #fff; border-radius: 2px;`;
+      lightImg.onclick = function () {
+        lightBox.style = '';
+        this.remove();
+      }
+      lightBox.append(lightImg);
+    }
+  })
+</script>
   </div>
 </body>
 <input hidden id="copy" />
@@ -1219,6 +1420,5 @@ int main()
 
 
 <script src=" /media/js/cool.js"></script>
-
 
 </html>

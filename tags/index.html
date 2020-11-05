@@ -5,11 +5,11 @@
   <meta charset="UTF-8" />
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-<meta name="keywords" content="Ruble，捣鼓各种东西的大闲人">
+<meta name="keywords" content="个人领悟，茶余饭后">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
 <title>Ruble</title>
-<link rel="shortcut icon" href="/favicon.ico?v=1604505299625">
+<link rel="shortcut icon" href="/favicon.ico?v=1604540071143">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
 
@@ -18,7 +18,7 @@
   href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic|Roboto Slab:300,300italic,400,400italic,700,700italic|Rosario:300,300italic,400,400italic,700,700italic|PT Mono:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext"
   rel="stylesheet" type="text/css">
 
-<link href="/media/hljs/styles/androidstudio.css"
+<link href="/media/hljs/styles/vs2015.css"
   rel="stylesheet">
 
 <script src="/media/hljs/highlight.js"></script>
@@ -54,7 +54,7 @@
           
         </div>
         
-          <p class="subtitle">精于心，简于形。悟于心</p>
+          <p class="subtitle">精于心，简于形，悟与心</p>
         
       </div>
       <nav class="site-nav" id="site_nav">
@@ -165,7 +165,7 @@
     
     <div class="site-description right-motion">
       
-        <p id="binft">只是个大闲人，没别的本事，爱吹牛皮</p>
+        <p id="binft">没本事，爱吹牛</p>
       
     </div>
     
@@ -174,19 +174,19 @@
     <div class="sidebar-item-box">
       <a href="/archives/">
         
-        <span class="site-item-stat-count">3</span>
+        <span class="site-item-stat-count">4</span>
         <span class="site-item-stat-name">文章</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="">
-        <span class="site-item-stat-count">1</span>
+        <span class="site-item-stat-count">2</span>
         <span class="site-item-stat-name">分类</span>
       </a>
     </div>
     <div class="sidebar-item-box">
       <a href="/tags/">
-        <span class="site-item-stat-count">1</span>
+        <span class="site-item-stat-count">2</span>
         <span class="site-item-stat-name">标签</span>
       </a>
     </div>
@@ -224,7 +224,7 @@
           <section class="section tags-section bg-color posts-expand">
             <div class="tags-box">
   <div class="tag-cloud-title">
-    目前共计 1 个标签
+    目前共计 2 个标签
   </div>
   <div class="tag-cloud-list" id="tags">
     
@@ -235,12 +235,38 @@
             
       
         
-      
+          
         
       
         
       
-      <a class="cloud-tag" href="https://rerunbug.github.io/tag/DT-0lCPRj/" rel="1">读书笔记</a>
+        
+          
+            
+      
+        
+      
+      <a class="cloud-tag" href="https://rerunbug.github.io/aSEJh56re/" rel="2">C</a>
+    
+      
+      
+        
+          
+        
+      
+        
+          
+            
+      
+        
+      
+        
+          
+        
+      
+        
+      
+      <a class="cloud-tag" href="https://rerunbug.github.io/DT-0lCPRj/" rel="1">读书笔记</a>
     
   </div>
 </div>
@@ -351,15 +377,11 @@
         <div class="live_ico_item type_info" id="showInfoBtn"></div>
         <div class="live_ico_item type_talk" id="showTalkBtn"></div>
         
-        <div class="live_ico_item type_music" id="musicButton"></div>
-        
         <div class="live_ico_item type_youdu" id="youduButton"></div>
         <div class="live_ico_item type_quit" id="hideButton"></div>
         <input name="live_statu_val" id="live_statu_val" value="0" type="hidden" />
         <audio src="" style="display:none;" id="live2d_bgm" data-bgm="0" preload="none"></audio>
         <input id="duType" value="douqilai" type="hidden">
-        
-        <input name="live2dBGM" value="http://music.163.com/song?id=506196018&amp;userid=296354871" type="hidden">
         
       </div>
     
@@ -1128,7 +1150,36 @@
     <div class="result">
       
       <div class="item">
-        <a class="result-title" href="https://rerunbug.github.io/post/read-mark/"" data-c="
+        <a class="result-title" href="https://rerunbug.github.io/zhi-zhen/"" data-c="
+          &lt;p&gt;&lt;strong&gt;我们都知道声明一个变量，就是声明一个内存空间。比如声明一个int型的变量相当于向计算机索要一块地方，能容纳4个字节的地方。而指针的作用就是“查户口”&lt;/strong&gt;。&lt;br&gt;
+下面我们来简单声明一下指针变量&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#include&amp;lt;stdio.h&amp;gt;
+int pointer(int*point,*u,aeve);
+int main()
+{
+    int x=0,y=0;
+    pointer(&amp;amp;x,&amp;amp;y);
+    printf(&amp;quot;%d %d&amp;quot;,x,y);
+}
+int pointer(int*point,*u)
+{
+    int aver;
+    aver=*point;
+    *point=*u;
+    *u=aver;
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;需要注意的是pointer(&amp;amp;x,&amp;amp;y)这里用了取址运算符&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;po=&amp;amp;pe；
+pa=*po
+//相当于pa=pe这是间接赋值
+&lt;/code&gt;&lt;/pre&gt;
+">指针</a>
+      </div>
+      
+      <div class="item">
+        <a class="result-title" href="https://rerunbug.github.io/read-mark/"" data-c="
           &lt;ul&gt;
 &lt;li&gt;简介
 &lt;blockquote&gt;
@@ -1153,13 +1204,13 @@
       </div>
       
       <div class="item">
-        <a class="result-title" href="https://rerunbug.github.io/post/wu-xiao-jun-shi-sb/"" data-c="
+        <a class="result-title" href="https://rerunbug.github.io/wu-xiao-jun-shi-sb/"" data-c="
           &lt;p&gt;吴晓俊是sb&lt;/p&gt;
 ">吴晓俊是sb</a>
       </div>
       
       <div class="item">
-        <a class="result-title" href="https://rerunbug.github.io/post/hello-world/"" data-c="
+        <a class="result-title" href="https://rerunbug.github.io/hello-world/"" data-c="
           &lt;p&gt;#数组与指针是有一种共通的关系，指针可以当数组来用，反正总的来说都是内存 内存&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;首先，先声明一下数组类型&lt;/p&gt;
@@ -1202,7 +1253,7 @@ int main()
       </div>
       
       <div class="item">
-        <a class="result-title" href="https://rerunbug.github.io/post/about/"" data-c="
+        <a class="result-title" href="https://rerunbug.github.io/about/"" data-c="
           &lt;blockquote&gt;
 &lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1217,7 +1268,7 @@ int main()
   </div>
 </div>
 <script>
-  // var escape = "[{&#34;content&#34;:&#34;&lt;ul&gt;\n&lt;li&gt;简介\n&lt;blockquote&gt;\n&lt;p&gt;作者：东野圭吾&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;/li&gt;\n&lt;li&gt;内容简介\n&lt;blockquote&gt;\n&lt;p&gt;平介的幸福生活在39岁那年被摧毁了。妻子带着女儿回娘家探亲，乘坐的大巴意外坠落山崖。妻子拼命护住女儿，最终伤重不治；女儿毫发未伤，但一直昏迷。妻子离世的那一刻，女儿奇迹般醒了过来。平介强忍悲痛为妻子办完葬礼，回到病房，看到女儿在熟睡，他忍不住呜咽着呼喊妻子。这时突然传来一个声音：“……公。”平介吓了一跳，却四顾无人，正疑惑时又听到了那声音：“老公，我……我在这儿。”&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;!-- more --&gt;\n&lt;ul&gt;\n&lt;li&gt;剧情简介\n&lt;blockquote&gt;\n&lt;p&gt;平介是一名汽车零件加工厂的工作人员。一年前升为了组长。因为年关将至厂里的业务各种多，导致不得不加班，直子是平介的妻子，藻奈美是平介的女儿。她们因为要祭拜故人要回去家乡，因为平介要加班，所以她们回去要乘坐大巴。平介在一篇报道中看的了“长野滑雪大巴坠崖事故”的大字标题，平介这时开始紧张了起来，因为长野滑雪大巴正是妻儿她们所乘坐的大巴啊，死亡名单里面就有她们&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;,&#34;fileName&#34;:&#34;read-mark&#34;,&#34;abstract&#34;:&#34;&lt;ul&gt;\n&lt;li&gt;简介\n&lt;blockquote&gt;\n&lt;p&gt;作者：东野圭吾&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;/li&gt;\n&lt;li&gt;内容简介\n&lt;blockquote&gt;\n&lt;p&gt;平介的幸福生活在39岁那年被摧毁了。妻子带着女儿回娘家探亲，乘坐的大巴意外坠落山崖。妻子拼命护住女儿，最终伤重不治；女儿毫发未伤，但一直昏迷。妻子离世的那一刻，女儿奇迹般醒了过来。平介强忍悲痛为妻子办完葬礼，回到病房，看到女儿在熟睡，他忍不住呜咽着呼喊妻子。这时突然传来一个声音：“……公。”平介吓了一跳，却四顾无人，正疑惑时又听到了那声音：“老公，我……我在这儿。”&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;,&#34;title&#34;:&#34;秘密&#34;,&#34;tags&#34;:[{&#34;index&#34;:-1,&#34;name&#34;:&#34;读书笔记&#34;,&#34;slug&#34;:&#34;DT-0lCPRj&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://rerunbug.github.io/tag/DT-0lCPRj/&#34;}],&#34;date&#34;:&#34;2020-11-04 09:10:23&#34;,&#34;dateFormat&#34;:&#34;2020-11-04&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://rerunbug.github.io/post/read-mark/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:66000,&#34;words&#34;:334,&#34;minutes&#34;:2},&#34;description&#34;:&#34;\n简介\n\n作者：东野圭吾\n\n\n内容简介\n\n平介的幸福生活在39岁那年被摧毁了。妻子带着女儿回娘家探亲，乘坐的大巴意外坠落山崖。妻子拼命护住女儿，最终伤重不治；女儿毫发未伤，但一直昏迷。妻子离世的那一刻，女儿奇迹般醒了过来。平介强忍悲痛为妻子...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;吴晓俊是sb&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;wu-xiao-jun-shi-sb&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;吴晓俊是sb&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2020-11-03 23:51:03&#34;,&#34;dateFormat&#34;:&#34;2020-11-03&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://rerunbug.github.io/post/wu-xiao-jun-shi-sb/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:1000,&#34;words&#34;:5,&#34;minutes&#34;:1},&#34;description&#34;:&#34;吴晓俊是sb\n&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;#数组与指针是有一种共通的关系，指针可以当数组来用，反正总的来说都是内存 内存&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;首先，先声明一下数组类型&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-cpp\&#34;&gt;#include&amp;lt;stdio.h&amp;gt;\n#define size 4\nint main()\n{\n    int shuzu[size]={1,2,3,4};\n    int i;\n    for(i=0;i&amp;lt;size;i++){\n        printf(&amp;quot;%d&amp;quot;,shuzu[i]);\n    }\n}\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;&lt;em&gt;上面是简单的数组声明和输出。&lt;br&gt;\n数组和for循环是才对出现的因为for循环可以访问数组和输出数组，就像花括号一样&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;#二维数组&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-cpp\&#34;&gt;#include&amp;lt;stdio.h&amp;gt;\n#define hang 3\n#define lie 4\nint main()\n{\n            //行      列\n    int erweishuzu[hang][lie]={\n        {1,2,3,4},\n        {5,6,7,8},\n        {9,10,11,12}//三行四列\n    }\n    int h,l;\n    for (h=0;h&amp;lt;hang;h++){\n        for(l=0;l&amp;lt;lie;l++){\n        }\n    }\n\n}\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;&lt;em&gt;二维数组与一维数组有异曲同工之妙。看一维就要一次for循环，二维就用两次for循环最外层为行，最内层为列&lt;/em&gt;&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;hello-world&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;数组&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2020-11-03 23:07:16&#34;,&#34;dateFormat&#34;:&#34;2020-11-03&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://rerunbug.github.io/post/hello-world/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:59000,&#34;words&#34;:226,&#34;minutes&#34;:1},&#34;description&#34;:&#34;#数组与指针是有一种共通的关系，指针可以当数组来用，反正总的来说都是内存 内存\n\n首先，先声明一下数组类型\n\n#include&amp;lt;stdio.h&amp;gt;\n#define size 4\nint main()\n{\n    int shuzu...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;h2 id=\&#34;关于本站-为了验证吴晓俊是sb开的\&#34;&gt;🏠 关于本站     为了验证吴晓俊是sb开的&lt;/h2&gt;\n&lt;h2 id=\&#34;博主是谁-ruble\&#34;&gt;👨‍💻 博主是谁   Ruble&lt;/h2&gt;\n&lt;h2 id=\&#34;兴趣爱好-打飞机\&#34;&gt;⛹ 兴趣爱好    打飞机&lt;/h2&gt;\n&lt;h2 id=\&#34;联系我呀-想啥呢\&#34;&gt;📬 联系我呀  想啥呢？&lt;/h2&gt;\n&#34;,&#34;fileName&#34;:&#34;about&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;关于&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2019-01-25 19:09:48&#34;,&#34;dateFormat&#34;:&#34;2019-01-25&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://rerunbug.github.io/post/about/&#34;,&#34;hideInList&#34;:true,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:10000,&#34;words&#34;:49,&#34;minutes&#34;:1},&#34;description&#34;:&#34;\n欢迎来到我的小站呀，很高兴遇见你！🤝\n\n🏠 关于本站     为了验证吴晓俊是sb开的\n👨‍💻 博主是谁   Ruble\n⛹ 兴趣爱好    打飞机\n📬 联系我呀  想啥呢？\n...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99-%E4%B8%BA%E4%BA%86%E9%AA%8C%E8%AF%81%E5%90%B4%E6%99%93%E4%BF%8A%E6%98%AFsb%E5%BC%80%E7%9A%84\&#34;&gt;🏠 关于本站     为了验证吴晓俊是sb开的&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81-ruble\&#34;&gt;👨‍💻 博主是谁   Ruble&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD-%E6%89%93%E9%A3%9E%E6%9C%BA\&#34;&gt;⛹ 兴趣爱好    打飞机&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80-%E6%83%B3%E5%95%A5%E5%91%A2\&#34;&gt;📬 联系我呀  想啥呢？&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;}]";
+  // var escape = "[{&#34;content&#34;:&#34;&lt;p&gt;&lt;strong&gt;我们都知道声明一个变量，就是声明一个内存空间。比如声明一个int型的变量相当于向计算机索要一块地方，能容纳4个字节的地方。而指针的作用就是“查户口”&lt;/strong&gt;。&lt;br&gt;\n下面我们来简单声明一下指针变量&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-cpp\&#34;&gt;#include&amp;lt;stdio.h&amp;gt;\nint pointer(int*point,*u,aeve);\nint main()\n{\n    int x=0,y=0;\n    pointer(&amp;amp;x,&amp;amp;y);\n    printf(&amp;quot;%d %d&amp;quot;,x,y);\n}\nint pointer(int*point,*u)\n{\n    int aver;\n    aver=*point;\n    *point=*u;\n    *u=aver;\n    return 0;\n}\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;&lt;strong&gt;需要注意的是pointer(&amp;amp;x,&amp;amp;y)这里用了取址运算符&lt;/strong&gt;&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-cpp\&#34;&gt;po=&amp;amp;pe；\npa=*po\n//相当于pa=pe这是间接赋值\n&lt;/code&gt;&lt;/pre&gt;\n&#34;,&#34;fileName&#34;:&#34;zhi-zhen&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;指针&#34;,&#34;tags&#34;:[{&#34;index&#34;:-1,&#34;name&#34;:&#34;C&#34;,&#34;slug&#34;:&#34;aSEJh56re&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://rerunbug.github.io/aSEJh56re/&#34;}],&#34;date&#34;:&#34;2020-11-05 07:53:53&#34;,&#34;dateFormat&#34;:&#34;2020-11-05&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://rerunbug.github.io/zhi-zhen/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:42000,&#34;words&#34;:162,&#34;minutes&#34;:1},&#34;description&#34;:&#34;我们都知道声明一个变量，就是声明一个内存空间。比如声明一个int型的变量相当于向计算机索要一块地方，能容纳4个字节的地方。而指针的作用就是“查户口”。\n下面我们来简单声明一下指针变量\n#include&amp;lt;stdio.h&amp;gt;\nint ...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;ul&gt;\n&lt;li&gt;简介\n&lt;blockquote&gt;\n&lt;p&gt;作者：东野圭吾&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;/li&gt;\n&lt;li&gt;内容简介\n&lt;blockquote&gt;\n&lt;p&gt;平介的幸福生活在39岁那年被摧毁了。妻子带着女儿回娘家探亲，乘坐的大巴意外坠落山崖。妻子拼命护住女儿，最终伤重不治；女儿毫发未伤，但一直昏迷。妻子离世的那一刻，女儿奇迹般醒了过来。平介强忍悲痛为妻子办完葬礼，回到病房，看到女儿在熟睡，他忍不住呜咽着呼喊妻子。这时突然传来一个声音：“……公。”平介吓了一跳，却四顾无人，正疑惑时又听到了那声音：“老公，我……我在这儿。”&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&lt;!-- more --&gt;\n&lt;ul&gt;\n&lt;li&gt;剧情简介\n&lt;blockquote&gt;\n&lt;p&gt;平介是一名汽车零件加工厂的工作人员。一年前升为了组长。因为年关将至厂里的业务各种多，导致不得不加班，直子是平介的妻子，藻奈美是平介的女儿。她们因为要祭拜故人要回去家乡，因为平介要加班，所以她们回去要乘坐大巴。平介在一篇报道中看的了“长野滑雪大巴坠崖事故”的大字标题，平介这时开始紧张了起来，因为长野滑雪大巴正是妻儿她们所乘坐的大巴啊，死亡名单里面就有她们&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;,&#34;fileName&#34;:&#34;read-mark&#34;,&#34;abstract&#34;:&#34;&lt;ul&gt;\n&lt;li&gt;简介\n&lt;blockquote&gt;\n&lt;p&gt;作者：东野圭吾&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;/li&gt;\n&lt;li&gt;内容简介\n&lt;blockquote&gt;\n&lt;p&gt;平介的幸福生活在39岁那年被摧毁了。妻子带着女儿回娘家探亲，乘坐的大巴意外坠落山崖。妻子拼命护住女儿，最终伤重不治；女儿毫发未伤，但一直昏迷。妻子离世的那一刻，女儿奇迹般醒了过来。平介强忍悲痛为妻子办完葬礼，回到病房，看到女儿在熟睡，他忍不住呜咽着呼喊妻子。这时突然传来一个声音：“……公。”平介吓了一跳，却四顾无人，正疑惑时又听到了那声音：“老公，我……我在这儿。”&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;,&#34;title&#34;:&#34;秘密&#34;,&#34;tags&#34;:[{&#34;index&#34;:-1,&#34;name&#34;:&#34;读书笔记&#34;,&#34;slug&#34;:&#34;DT-0lCPRj&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://rerunbug.github.io/DT-0lCPRj/&#34;}],&#34;date&#34;:&#34;2020-11-04 09:10:23&#34;,&#34;dateFormat&#34;:&#34;2020-11-04&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://rerunbug.github.io/read-mark/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;2 min read&#34;,&#34;time&#34;:66000,&#34;words&#34;:334,&#34;minutes&#34;:2},&#34;description&#34;:&#34;\n简介\n\n作者：东野圭吾\n\n\n内容简介\n\n平介的幸福生活在39岁那年被摧毁了。妻子带着女儿回娘家探亲，乘坐的大巴意外坠落山崖。妻子拼命护住女儿，最终伤重不治；女儿毫发未伤，但一直昏迷。妻子离世的那一刻，女儿奇迹般醒了过来。平介强忍悲痛为妻子...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;吴晓俊是sb&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;wu-xiao-jun-shi-sb&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;吴晓俊是sb&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2020-11-03 23:51:03&#34;,&#34;dateFormat&#34;:&#34;2020-11-03&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://rerunbug.github.io/wu-xiao-jun-shi-sb/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:1000,&#34;words&#34;:5,&#34;minutes&#34;:1},&#34;description&#34;:&#34;吴晓俊是sb\n&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;p&gt;#数组与指针是有一种共通的关系，指针可以当数组来用，反正总的来说都是内存 内存&lt;/p&gt;\n&lt;blockquote&gt;\n&lt;p&gt;首先，先声明一下数组类型&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-cpp\&#34;&gt;#include&amp;lt;stdio.h&amp;gt;\n#define size 4\nint main()\n{\n    int shuzu[size]={1,2,3,4};\n    int i;\n    for(i=0;i&amp;lt;size;i++){\n        printf(&amp;quot;%d&amp;quot;,shuzu[i]);\n    }\n}\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;&lt;em&gt;上面是简单的数组声明和输出。&lt;br&gt;\n数组和for循环是才对出现的因为for循环可以访问数组和输出数组，就像花括号一样&lt;/em&gt;&lt;/p&gt;\n&lt;p&gt;#二维数组&lt;/p&gt;\n&lt;pre&gt;&lt;code class=\&#34;language-cpp\&#34;&gt;#include&amp;lt;stdio.h&amp;gt;\n#define hang 3\n#define lie 4\nint main()\n{\n            //行      列\n    int erweishuzu[hang][lie]={\n        {1,2,3,4},\n        {5,6,7,8},\n        {9,10,11,12}//三行四列\n    }\n    int h,l;\n    for (h=0;h&amp;lt;hang;h++){\n        for(l=0;l&amp;lt;lie;l++){\n        }\n    }\n\n}\n&lt;/code&gt;&lt;/pre&gt;\n&lt;p&gt;&lt;em&gt;二维数组与一维数组有异曲同工之妙。看一维就要一次for循环，二维就用两次for循环最外层为行，最内层为列&lt;/em&gt;&lt;/p&gt;\n&#34;,&#34;fileName&#34;:&#34;hello-world&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;数组&#34;,&#34;tags&#34;:[{&#34;index&#34;:-1,&#34;name&#34;:&#34;C&#34;,&#34;slug&#34;:&#34;aSEJh56re&#34;,&#34;used&#34;:true,&#34;link&#34;:&#34;https://rerunbug.github.io/aSEJh56re/&#34;}],&#34;date&#34;:&#34;2020-11-03 23:07:16&#34;,&#34;dateFormat&#34;:&#34;2020-11-03&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://rerunbug.github.io/hello-world/&#34;,&#34;hideInList&#34;:false,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:59000,&#34;words&#34;:226,&#34;minutes&#34;:1},&#34;description&#34;:&#34;#数组与指针是有一种共通的关系，指针可以当数组来用，反正总的来说都是内存 内存\n\n首先，先声明一下数组类型\n\n#include&amp;lt;stdio.h&amp;gt;\n#define size 4\nint main()\n{\n    int shuzu...&#34;,&#34;toc&#34;:&#34;&#34;},{&#34;content&#34;:&#34;&lt;blockquote&gt;\n&lt;p&gt;欢迎来到我的小站呀，很高兴遇见你！🤝&lt;/p&gt;\n&lt;/blockquote&gt;\n&lt;h2 id=\&#34;关于本站-为了验证吴晓俊是sb开的\&#34;&gt;🏠 关于本站     为了验证吴晓俊是sb开的&lt;/h2&gt;\n&lt;h2 id=\&#34;博主是谁-ruble\&#34;&gt;👨‍💻 博主是谁   Ruble&lt;/h2&gt;\n&lt;h2 id=\&#34;兴趣爱好-打飞机\&#34;&gt;⛹ 兴趣爱好    打飞机&lt;/h2&gt;\n&lt;h2 id=\&#34;联系我呀-想啥呢\&#34;&gt;📬 联系我呀  想啥呢？&lt;/h2&gt;\n&#34;,&#34;fileName&#34;:&#34;about&#34;,&#34;abstract&#34;:&#34;&#34;,&#34;title&#34;:&#34;关于&#34;,&#34;tags&#34;:[],&#34;date&#34;:&#34;2019-01-25 19:09:48&#34;,&#34;dateFormat&#34;:&#34;2019-01-25&#34;,&#34;feature&#34;:&#34;&#34;,&#34;link&#34;:&#34;https://rerunbug.github.io/about/&#34;,&#34;hideInList&#34;:true,&#34;isTop&#34;:false,&#34;stats&#34;:{&#34;text&#34;:&#34;1 min read&#34;,&#34;time&#34;:10000,&#34;words&#34;:49,&#34;minutes&#34;:1},&#34;description&#34;:&#34;\n欢迎来到我的小站呀，很高兴遇见你！🤝\n\n🏠 关于本站     为了验证吴晓俊是sb开的\n👨‍💻 博主是谁   Ruble\n⛹ 兴趣爱好    打飞机\n📬 联系我呀  想啥呢？\n...&#34;,&#34;toc&#34;:&#34;&lt;ul class=\&#34;markdownIt-TOC\&#34;&gt;\n&lt;li&gt;\n&lt;ul&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B3%E4%BA%8E%E6%9C%AC%E7%AB%99-%E4%B8%BA%E4%BA%86%E9%AA%8C%E8%AF%81%E5%90%B4%E6%99%93%E4%BF%8A%E6%98%AFsb%E5%BC%80%E7%9A%84\&#34;&gt;🏠 关于本站     为了验证吴晓俊是sb开的&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%8D%9A%E4%B8%BB%E6%98%AF%E8%B0%81-ruble\&#34;&gt;👨‍💻 博主是谁   Ruble&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E5%85%B4%E8%B6%A3%E7%88%B1%E5%A5%BD-%E6%89%93%E9%A3%9E%E6%9C%BA\&#34;&gt;⛹ 兴趣爱好    打飞机&lt;/a&gt;&lt;/li&gt;\n&lt;li&gt;&lt;a href=\&#34;#%E8%81%94%E7%B3%BB%E6%88%91%E5%91%80-%E6%83%B3%E5%95%A5%E5%91%A2\&#34;&gt;📬 联系我呀  想啥呢？&lt;/a&gt;&lt;/li&gt;\n&lt;/ul&gt;\n&lt;/li&gt;\n&lt;/ul&gt;\n&#34;}]";
   // var json = escape.substr(1, escape.length - 2);
   // var datas = json.split(',');
   // for (let i=0; i < datas.length; i++) {

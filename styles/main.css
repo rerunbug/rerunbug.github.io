@@ -2069,10 +2069,10 @@ pre > span.copy-code:hover {
   font-weight: bold;
 }
 body {
-      background-color: #212529;
+      background-color: #eee;
     }
     .nav-toggle .line {
-      background-color: #212529 !important;
+      background-color: #eee !important;
     }.header {
         width: 960px;
         margin: 0 auto;
@@ -2083,13 +2083,13 @@ body {
         margin: 0 auto;
       }
     body {
-      color: #e9ecef;
+      color: #555;
     }
     .next-md-body {
-      color: #e9ecef;
+      color: #555;
     }
     .next-md-body h1, .next-md-body h2 {
-      border-bottom-color: #e9ecef;
+      border-bottom-color: #555;
     }
     .archive-timeline-box::after, .tag-timeline-wrapper::after {
       background: #eeeeeefe;
