@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rerunbug.github.io</id>
     <title>Ruble</title>
-    <updated>2020-11-07T08:09:10.067Z</updated>
+    <updated>2020-11-07T15:55:17.553Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rerunbug.github.io"/>
     <link rel="self" href="https://rerunbug.github.io/atom.xml"/>
@@ -10,6 +10,34 @@
     <logo>https://rerunbug.github.io/images/avatar.png</logo>
     <icon>https://rerunbug.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Ruble</rights>
+    <entry>
+        <title type="html"><![CDATA[子序列的和（subsequence）]]></title>
+        <id>https://rerunbug.github.io/xdJMwwQ9W/</id>
+        <link href="https://rerunbug.github.io/xdJMwwQ9W/">
+        </link>
+        <updated>2020-11-07T10:24:27.000Z</updated>
+        <content type="html"><![CDATA[<figure data-type="image" tabindex="1"><img src="https://rerunbug.github.io/post-images/1604744763984.jpg" alt="" loading="lazy"></figure>
+<pre><code class="language-cpp">#include&lt;stdio.h&gt;
+double c;
+int main()
+{
+	long long int n, m,a,j=1;
+	while (scanf_s(&quot;%lld %lld&quot;, &amp;n, &amp;m) !=EOF)
+	{
+		if (n == 0 &amp;&amp; m == 0)break;
+		for (a=n; a &lt;= m; a++)
+		{
+			c +=1.0/(a*a);
+		}
+		printf(&quot;Case %d:&quot;, j++);
+		printf(&quot;%.5lf\n&quot;, c);
+	}
+	return 0;
+}
+</code></pre>
+<p><strong>在c+=1.0/(a*a)这里我也中了坑，c语言里面int/int 得到的是int型的数据，而int/float类型的数据就会强制转化为int型的数据。只有float/float才会为有小数的值</strong></p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[水仙花数（daffodil）]]></title>
         <id>https://rerunbug.github.io/1sX5M7cRx/</id>
