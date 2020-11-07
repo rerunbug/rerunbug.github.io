@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rerunbug.github.io</id>
     <title>Ruble</title>
-    <updated>2020-11-05T14:40:19.354Z</updated>
+    <updated>2020-11-07T08:09:10.067Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rerunbug.github.io"/>
     <link rel="self" href="https://rerunbug.github.io/atom.xml"/>
@@ -10,6 +10,41 @@
     <logo>https://rerunbug.github.io/images/avatar.png</logo>
     <icon>https://rerunbug.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Ruble</rights>
+    <entry>
+        <title type="html"><![CDATA[水仙花数（daffodil）]]></title>
+        <id>https://rerunbug.github.io/1sX5M7cRx/</id>
+        <link href="https://rerunbug.github.io/1sX5M7cRx/">
+        </link>
+        <updated>2020-11-07T07:40:04.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>输出 100~999 中的所有水仙花数。若 3 位数 ABC 满足 ABC=A3+B3+C3，则称其为水仙<br>
+花数。例如 153=13+53+33，所以 153 是水仙花数</strong></p>
+<pre><code class="language-cpp">#include&lt;stdio.h&gt;
+const int max = 999;
+int main()
+{
+	for (int min = 100; min &lt;= max; min++) {
+		int a = min / 100;//百分位
+		int b = (min % 100) / 10;//十分位
+		int c = min % 10;//个分位
+		if ((a * a * a) + (b * b * b) + (c * c * c))printf(&quot;%d\n&quot;, min);
+	}
+	return 0;
+}
+</code></pre>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[后翼弃兵 The Queen's Gambit]]></title>
+        <id>https://rerunbug.github.io/PM85vW1Lf/</id>
+        <link href="https://rerunbug.github.io/PM85vW1Lf/">
+        </link>
+        <updated>2020-11-05T14:47:39.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://rerunbug.github.io/post-images/1604587726375.jpg" alt="" loading="lazy"><br>
+<a href="https://movie.douban.com/subject/32579283/?tag=%E7%83%AD%E9%97%A8&amp;from=gaia">豆瓣直达</a><br>
+<strong>Netflix出品必属精品</strong><br>
+由于博主也不懂国际象棋所以我尽量不讲国际象棋有关。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[指针]]></title>
         <id>https://rerunbug.github.io/zhi-zhen/</id>
