@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rerunbug.github.io</id>
     <title>Ruble</title>
-    <updated>2020-11-07T15:55:17.553Z</updated>
+    <updated>2020-11-08T07:33:16.351Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rerunbug.github.io"/>
     <link rel="self" href="https://rerunbug.github.io/atom.xml"/>
@@ -10,6 +10,37 @@
     <logo>https://rerunbug.github.io/images/avatar.png</logo>
     <icon>https://rerunbug.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Ruble</rights>
+    <entry>
+        <title type="html"><![CDATA[ESP定律]]></title>
+        <id>https://rerunbug.github.io/aREf_pDTx/</id>
+        <link href="https://rerunbug.github.io/aREf_pDTx/">
+        </link>
+        <updated>2020-11-08T06:56:27.000Z</updated>
+        <content type="html"><![CDATA[<p><font color="red">ESP定律又名堆栈平衡定律。</font><br>
+<strong>典型的壳有UPX壳</strong><br>
+<img src="https://rerunbug.github.io/post-images/1604819295812.jpg" alt="" loading="lazy"><br>
+pushad是一个很典型的入栈代码<br>
+我们在这里F8一下注意寄存器的ESP那边，只有ESP那边标红了<br>
+<img src="https://rerunbug.github.io/post-images/1604819553832.jpg" alt="" loading="lazy"><br>
+然后我们在红字部分转到内存部分<br>
+在第一个字节下一个硬件访问断点4字节<br>
+然后F9来到<br>
+<img src="https://rerunbug.github.io/post-images/1604819891609.jpg" alt="" loading="lazy"><br>
+看到0046DE7C这里的jmp是一个大跳转F8过去就来到了<br>
+OEP<br>
+<img src="https://rerunbug.github.io/post-images/1604820089795.jpg" alt="" loading="lazy"><br>
+因为这只是一个压缩壳，所以他没有加密IAT直接脱就好了<br>
+这里我们用dbg自带的插件来脱<br>
+按ctrl+i<br>
+<img src="https://rerunbug.github.io/post-images/1604820279590.jpg" alt="" loading="lazy"><br>
+OEP自动填写上去了<br>
+之后我们按IAT Autosearch按钮之后VA和SIZE的数据也会帮我们填上去了<br>
+然后按Get Imports后我们可以看到表格里面列有很多数据<br>
+我们把打<font color="red">×</font>的数据按鼠标右键Delte tree node删除即可<br>
+然后按Dump按钮会得到一个exe文件，注意这个无法打开的我们还需要Fix Dump文件<br>
+按下这个按钮选择我们刚刚得到的Dump文件即可运行了</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[子序列的和（subsequence）]]></title>
         <id>https://rerunbug.github.io/xdJMwwQ9W/</id>
