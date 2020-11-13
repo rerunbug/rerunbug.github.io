@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rerunbug.github.io</id>
     <title>Ruble</title>
-    <updated>2020-11-11T07:44:17.356Z</updated>
+    <updated>2020-11-13T11:47:13.824Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rerunbug.github.io"/>
     <link rel="self" href="https://rerunbug.github.io/atom.xml"/>
@@ -10,6 +10,41 @@
     <logo>https://rerunbug.github.io/images/avatar.png</logo>
     <icon>https://rerunbug.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Ruble</rights>
+    <entry>
+        <title type="html"><![CDATA[Using Git]]></title>
+        <id>https://rerunbug.github.io/UEcFGE4HJ/</id>
+        <link href="https://rerunbug.github.io/UEcFGE4HJ/">
+        </link>
+        <updated>2020-11-13T11:24:45.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>Git下载链接</strong><br>
+<a href="https://gitforwindows.org/">Git</a><br>
+一路安装下去<br>
+<img src="https://rerunbug.github.io/post-images/1605267005371.jpg" alt="" loading="lazy"><br>
+按照这样设置<br>
+安装好后我们鼠标右键会发现多出了两个命令<br>
+一个是Git GUI Here   和   Git Bash Here<br>
+我们新建一个<font color="red">空</font>文件夹<br>
+然后打开这个文件夹鼠标右键按Git Bash Here<br>
+等一会会出现<br>
+<img src="https://rerunbug.github.io/post-images/1605267312288.jpg" alt="" loading="lazy"><br>
+键入git init 命令注意空格<br>
+查看文件夹的隐藏文件会发现多出一个文件.git<br>
+在gitee or github 新建好一个仓库以后。<br>
+我们键入git remote origin 加上地址<br>
+origin 可以任意名称<br>
+我们可以键入git remote -v查看是否完成了导入仓库<br>
+git add . 代表添加所用文件注意  .  的空格<br>
+git add 文件名<br>
+git status 查看添加目录<br>
+git commit -m&quot;&quot;   添加描述 必须的<br>
+git push origin master 推送到git上<br>
+有时候我们无法成功推送上去我们可以键入<br>
+git push origin master -f 命令强制推送上去<br>
+在团队项目中我们要养成push前要pull项目<br>
+git pull origin master<br>
+要不然会把之前队友的文件覆盖了的</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ESP定律]]></title>
         <id>https://rerunbug.github.io/aREf_pDTx/</id>
