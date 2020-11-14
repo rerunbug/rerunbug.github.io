@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rerunbug.github.io</id>
     <title>Ruble</title>
-    <updated>2020-11-13T11:47:13.824Z</updated>
+    <updated>2020-11-14T15:29:43.474Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rerunbug.github.io"/>
     <link rel="self" href="https://rerunbug.github.io/atom.xml"/>
@@ -10,6 +10,104 @@
     <logo>https://rerunbug.github.io/images/avatar.png</logo>
     <icon>https://rerunbug.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Ruble</rights>
+    <entry>
+        <title type="html"><![CDATA[冒泡排序法]]></title>
+        <id>https://rerunbug.github.io/tQVI77KYT/</id>
+        <link href="https://rerunbug.github.io/tQVI77KYT/">
+        </link>
+        <updated>2020-11-14T15:17:53.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://rerunbug.github.io/post-images/1605367181856.png" alt="" loading="lazy"><br>
+<img src="https://rerunbug.github.io/post-images/1605367188199.png" alt="" loading="lazy"></p>
+<pre><code class="language-cpp">#include&lt;iostream&gt;
+using namespace std;
+int bubbleSort(int a[], int N) {
+	int sw = 0;
+	bool flag = 1;
+	for (int i = 0; flag; i++) {
+		flag = 0;
+		for (int j = N - 1; j &gt;= i + 1; j--) {
+			//大于为降序，小于为升序。
+			if (a[j] &lt; a[j - 1]) {
+				//交换相邻元素      这里也可以用指针来表示
+				swap(a[j], a[j - 1]);//int *temp;
+				flag = 1;               //*temp=a[j];
+				sw++;                  //a[j]=a[j-1];
+			}                               //a[j-1]=*temp;
+		}
+	}
+	return sw;
+}
+int main()
+{
+	int a[100], n, sw;
+	cin &gt;&gt; n;
+	for (int i = 0; i &lt; n; i++) {
+		cin &gt;&gt; a[i];
+	}
+	sw = bubbleSort(a, n);
+	for (int i = 0; i &lt; n; i++) {
+		if (i)cout &lt;&lt; &quot; &quot;;
+		cout &lt;&lt; a[i];
+	}
+	cout &lt;&lt; endl;
+	cout &lt;&lt; sw &lt;&lt; endl;
+	return 0;
+}
+</code></pre>
+<p>冒泡排序法用c++比较方便一些<br>
+可以看到作比较的函数是数组的最后一个与倒数第二个<br>
+作比较的（众所周知3个数组里面所分配的空间命名为<br>
+a[0],a[1],a[2]是从0到n-1个数来分配内存空间的）如果<br>
+大于就将他们的值交换。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[插入排序法]]></title>
+        <id>https://rerunbug.github.io/RQJCmKtJJ/</id>
+        <link href="https://rerunbug.github.io/RQJCmKtJJ/">
+        </link>
+        <updated>2020-11-14T15:05:47.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://rerunbug.github.io/post-images/1605366613526.png" alt="" loading="lazy"><br>
+<img src="https://rerunbug.github.io/post-images/1605366622087.png" alt="" loading="lazy"></p>
+<pre><code class="language-cpp">#include&lt;stdio.h&gt;
+//按顺序输出数组元素
+void trace(int A[], int N)
+{
+	int i;
+	for (i = 0; i &lt; N; i++) {
+		if (i &gt; 0)printf(&quot; &quot;);//在相邻元素之间输出1个空格
+		printf(&quot;%d&quot;, A[i]);
+	}
+	printf(&quot;\n&quot;);
+}
+//插入排序（0起点数组）
+void insertionSort(int A[], int N) {
+	int j, i, v;
+	for (i = 1; i &lt; N; i++) {
+		v = A[i];
+		j = i - 1;
+		while (j &gt;= 0 &amp;&amp; A[j] &gt; v) {
+			A[j + 1] = A[j];
+			j--;
+		}
+		A[j + 1] = v;
+		trace(A, N);
+	}
+}
+int main() {
+	int N, i;
+	int A[100];
+	scanf_s(&quot;%d&quot;, &amp;N);
+	for (i = 0; i &lt; N; i++)scanf_s(&quot;%d&quot;, &amp;A[i]);
+	trace(A, N);
+	insertionSort(A, N);
+	return 0;
+}
+</code></pre>
+<p>第一次循环a[0]和a[1]作对比如果a[0]大于等于0并且大于a[1]<br>
+就把a[0]的值与a[1]的值交换。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Using Git]]></title>
         <id>https://rerunbug.github.io/UEcFGE4HJ/</id>
@@ -247,52 +345,6 @@ pa=*po
         </link>
         <updated>2020-11-03T15:51:03.000Z</updated>
         <content type="html"><![CDATA[<p>吴晓俊是sb</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[数组]]></title>
-        <id>https://rerunbug.github.io/hello-world/</id>
-        <link href="https://rerunbug.github.io/hello-world/">
-        </link>
-        <updated>2020-11-03T15:07:16.000Z</updated>
-        <content type="html"><![CDATA[<p>#数组与指针是有一种共通的关系，指针可以当数组来用，反正总的来说都是内存 内存</p>
-<blockquote>
-<p>首先，先声明一下数组类型</p>
-</blockquote>
-<pre><code class="language-cpp">#include&lt;stdio.h&gt;
-#define size 4
-int main()
-{
-    int shuzu[size]={1,2,3,4};
-    int i;
-    for(i=0;i&lt;size;i++){
-        printf(&quot;%d&quot;,shuzu[i]);
-    }
-}
-</code></pre>
-<p><em>上面是简单的数组声明和输出。<br>
-数组和for循环是才对出现的因为for循环可以访问数组和输出数组，就像花括号一样</em></p>
-<p>#二维数组</p>
-<pre><code class="language-cpp">#include&lt;stdio.h&gt;
-#define hang 3
-#define lie 4
-int main()
-{
-            //行      列
-    int erweishuzu[hang][lie]={
-        {1,2,3,4},
-        {5,6,7,8},
-        {9,10,11,12}//三行四列
-    }
-    int h,l;
-    for (h=0;h&lt;hang;h++){
-        for(l=0;l&lt;lie;l++){
-        }
-    }
-
-}
-</code></pre>
-<p><em>二维数组与一维数组有异曲同工之妙。看一维就要一次for循环，二维就用两次for循环最外层为行，最内层为列</em></p>
 ]]></content>
     </entry>
 </feed>
