@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rerunbug.github.io</id>
     <title>Ruble</title>
-    <updated>2020-11-15T06:17:33.015Z</updated>
+    <updated>2020-11-25T03:04:14.128Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rerunbug.github.io"/>
     <link rel="self" href="https://rerunbug.github.io/atom.xml"/>
@@ -10,6 +10,28 @@
     <logo>https://rerunbug.github.io/images/avatar.png</logo>
     <icon>https://rerunbug.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Ruble</rights>
+    <entry>
+        <title type="html"><![CDATA[哥儿]]></title>
+        <id>https://rerunbug.github.io/KXm_pk_us/</id>
+        <link href="https://rerunbug.github.io/KXm_pk_us/">
+        </link>
+        <updated>2020-11-25T02:17:49.000Z</updated>
+        <content type="html"><![CDATA[<p><strong>作者：夏目漱石</strong><br>
+<img src="https://rerunbug.github.io/post-images/1606270829037.jpg" alt="" loading="lazy"><br>
+我第次看夏目漱石的作品是《心》讲述的是一个孤独患者的故事。现在忘记的差不多了。<br>
+《哥儿》中的少爷的原型是 弘中又一，少爷是一个作事仅凭个人感觉做事的人，正如清婆<br>
+说的“少爷您善良，正义”少爷在我们中国古代就有一种侠客的风范，少爷在物理学院毕业<br>
+后就远离了东京去了一个偏僻的地方教书了，在哪里遇见了“红衬衫”，”豪猪“，”蹩脚帮“<br>
+，&quot;狗瓘”。少爷起初还以为“豪猪”是坏人结果是“红衬衫”“蹩脚帮”才是坏人第一点挑唆<br>
+学生去我的蚊帐里面放蚂蚱，在去“红衬衫”家吃饭下套让我们去劝架，结果诱导报社写我们去<br>
+打架了。反而“红衬衫”整天把为人师表，要严于律己，身为老师要起带头作用。“豪猪”与少爷<br>
+都是不懂如何在人世中圆滑出世的”侠客“少爷就是一种被别人卖了还在为别人数钱的人。”蹩脚帮“<br>
+与”红衬衫“狼狈为奸。而”狗瓘“作为校长却无作为。少爷与”豪猪“采用了比较侠客的方法报复<br>
+了回去，在妓院的门口蹲点等他们出现打了一顿，又以侠客的方式声明我就在旅馆等他们报警啥的，<br>
+仿佛就像告诉他你要来报复我，我随时恭候的到来。<br>
+这篇小说通篇看下来毫无压力看完后还有点爽，我内心也住着个侠客，但是如果在现代为人不圆滑就会成为别人砧板上的鱼肉，少爷与”豪猪“他们虽然成功了，但是也失去了教师的工作，少爷从40元/月的工作去到了25元/月的工作而且还很辛苦，写到这里我想到了一个很中二的台词：”错的不是我，而是这个世界“在文章的结尾夏目漱石还写了一段关于清婆的事情清婆死与肝炎，缺少清婆的少爷如何在这个两面三刀的世界上活着，在往后的几年里少爷是否还能保持初心呢？是否成为了与这个世界同流合污的那一类人呢？现在问题仿佛就像是在问读者。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[冒泡排序法]]></title>
         <id>https://rerunbug.github.io/tQVI77KYT/</id>
@@ -336,15 +358,6 @@ pa=*po
 </blockquote>
 </li>
 </ul>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[吴晓俊是sb]]></title>
-        <id>https://rerunbug.github.io/wu-xiao-jun-shi-sb/</id>
-        <link href="https://rerunbug.github.io/wu-xiao-jun-shi-sb/">
-        </link>
-        <updated>2020-11-03T15:51:03.000Z</updated>
-        <content type="html"><![CDATA[<p>吴晓俊是sb</p>
 ]]></content>
     </entry>
 </feed>

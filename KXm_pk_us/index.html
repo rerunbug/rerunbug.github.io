@@ -8,7 +8,7 @@
 <meta name="keywords" content="个人领悟，茶余饭后">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
-<title>Ruble</title>
+<title>哥儿 | Ruble</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1606273424293">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
@@ -29,6 +29,8 @@
 
 
 
+  <meta name="description" content="哥儿" />
+  <meta name="keywords" content="" />
 </head>
 
 <body>
@@ -156,8 +158,23 @@
     <div
       class="section-layout gemini ">
       <div class="section-layout-wrapper">
-        <div id="sidebarMeta" class="sidebar">
-    
+        
+
+<div class="sidebar">
+  
+    <div class="sidebar-box box-shadow-wrapper bg-color right-motion" id="sidebar">
+      
+        <div class="post-list-sidebar">
+          <div class="sidebar-title">
+            <span id="tocSideBar" class="sidebar-title-item sidebar-title-active">文章目录</span>
+            <span id="metaSideBar" class="sidebar-title-item">站点概览</span>
+          </div>
+        </div>
+      
+      <div class="sidebar-body gemini" id="sidebar_body">
+        
+          
+            
 <div class="sidebar-wrapper box-shadow-wrapper bg-color">
   <div class="sidebar-item">
     <img class="site-author-image right-motion" src="/images/avatar.png"/>
@@ -205,55 +222,170 @@
 
 
 </div>
+          
+        
+      </div>
+    </div>
+  
 </div>
 <script>
-  let sidebarMeta = document.querySelector('#sidebarMeta');
-  let scheme = 'gemini';
-  let sidebarWrapper = document.querySelector('.sidebar-wrapper');
-  if (sidebarMeta && (scheme === 'pisces' || scheme === 'gemini')) {
-    document.addEventListener('scroll', function(e) {
-      if (document.scrollingElement.scrollTop > parseInt(sidebarMeta.style.marginTop) + 10) {
-        sidebarWrapper.classList.add('home-sidebar-fixed')
-      } else {
-        sidebarWrapper.classList.remove('home-sidebar-fixed')
+  const SIDEBAR_TITLE_ACTIVE = 'sidebar-title-active';
+  const SIDEBAR_BODY_ACTIVE = 'sidebar-body-active';
+  const SLIDE_UP_IN = 'slide-up-in';
+
+  let sidebar = document.querySelector('#sidebar'),
+  tocSideBar = document.querySelector('#tocSideBar'),
+  metaSideBar = document.querySelector('#metaSideBar'),
+  postToc = document.querySelector('#post_toc'),
+  postSiteMeta = document.querySelector('#post_side_meta'),
+  sidebarTitle = document.querySelector('.sidebar-title'),
+  sidebarBody = document.querySelector('#sidebar_body');
+
+  tocSideBar && tocSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  metaSideBar && metaSideBar.addEventListener('click', (e) => {
+    toggleSidebar(e);
+  });
+
+  function toggleSidebar(e) {
+    let currentTitle = document.querySelector("."+SIDEBAR_TITLE_ACTIVE);
+    if (currentTitle == e.srcElement) {
+      return ;
+    }
+    let current, showElement, hideElement;
+    if (e.srcElement == metaSideBar) {
+      showElement = postSiteMeta;
+      hideElement = postToc;
+    } else if (e.srcElement == tocSideBar){
+      showElement = postToc;
+      hideElement = postSiteMeta;
+    }
+    currentTitle.classList.remove(SIDEBAR_TITLE_ACTIVE);
+    e.srcElement.classList.add(SIDEBAR_TITLE_ACTIVE);
+
+    window.Velocity(hideElement, 'stop');
+    window.Velocity(hideElement, 'transition.slideUpOut', {
+      display: 'none',
+      duration: 200,
+      complete: function () {
+        window.Velocity(showElement, 'transition.slideDownIn', {
+          duration: 200
+        });
       }
-    });
+    })
+    hideElement.classList.remove(SIDEBAR_BODY_ACTIVE);
+    showElement.classList.add(SIDEBAR_BODY_ACTIVE);
   }
-  </script>
-        <div class="section-box gemini box-shadow-wrapper">
-          <section class="friends-section bg-color slide-down-in">
-            <div class="firends-box">
-              <h1 class="firends-title" itemprop="name headline">友情链接</h1>
-              
-              
-              
+
+  postToc && postToc.addEventListener('transitionend', function() {
+    this.classList.remove(SLIDE_UP_IN);
+  });
+
+  if (sidebarBody) {
+    if (sidebarBody.classList.contains('pisces') || sidebarBody.classList.contains('gemini')) {
+      let hasFix = false;
+      let scrollEl = document.querySelector('.main-continer');
+      let limitTop = document.querySelector('#nav_ul').children.length * 42 + 162;
+      window.addEventListener('scroll', function(e) {
+        if (document.scrollingElement.scrollTop >= limitTop) {
+          if (!hasFix) {
+            sidebar.classList.add('sidebar-fixed');
+            hasFix = true;
+          }
+        } else {
+          if (hasFix) {
+            sidebar.classList.remove('sidebar-fixed');
+            hasFix = false;
+          }
+        }
+      });
+    }
+  }
+  
+</script>
+        <div class="section-box box-shadow-wrapper">
+          <div class="section bg-color post post-page">
+            <header class="post-header">
+  <h1 class="post-title">
+    <a class="post-title-link" href="https://rerunbug.github.io/KXm_pk_us/">
+      哥儿
+    </a>
+  </h1>
+  <div class="post-meta">
+    
+    <span class="meta-item pc-show">
+      <i class="fa fa-calendar-o"></i>
+      <span>发布于</span>
+      <span>2020-11-25</span>
+      <span class="post-meta-divider pc-show">|</span>
+    </span>
+    
+    <span class="meta-item">
+      <i class="fa fa-clock-o"></i>
+      <span>3分钟</span>
+    </span>
+    <span class="meta-item">
+      <span class="post-meta-divider">|</span>
+      <i class="fa fa-file-word-o"></i>
+      <span>617<span class="pc-show">字数</span></span>
+    </span>
+    
+  </div>
+</header>
+            <div class="post-body next-md-body" id="post_body">
+              <p><strong>作者：夏目漱石</strong><br>
+<img src="https://rerunbug.github.io/post-images/1606270829037.jpg" alt="" loading="lazy"><br>
+我第次看夏目漱石的作品是《心》讲述的是一个孤独患者的故事。现在忘记的差不多了。<br>
+《哥儿》中的少爷的原型是 弘中又一，少爷是一个作事仅凭个人感觉做事的人，正如清婆<br>
+说的“少爷您善良，正义”少爷在我们中国古代就有一种侠客的风范，少爷在物理学院毕业<br>
+后就远离了东京去了一个偏僻的地方教书了，在哪里遇见了“红衬衫”，”豪猪“，”蹩脚帮“<br>
+，&quot;狗瓘”。少爷起初还以为“豪猪”是坏人结果是“红衬衫”“蹩脚帮”才是坏人第一点挑唆<br>
+学生去我的蚊帐里面放蚂蚱，在去“红衬衫”家吃饭下套让我们去劝架，结果诱导报社写我们去<br>
+打架了。反而“红衬衫”整天把为人师表，要严于律己，身为老师要起带头作用。“豪猪”与少爷<br>
+都是不懂如何在人世中圆滑出世的”侠客“少爷就是一种被别人卖了还在为别人数钱的人。”蹩脚帮“<br>
+与”红衬衫“狼狈为奸。而”狗瓘“作为校长却无作为。少爷与”豪猪“采用了比较侠客的方法报复<br>
+了回去，在妓院的门口蹲点等他们出现打了一顿，又以侠客的方式声明我就在旅馆等他们报警啥的，<br>
+仿佛就像告诉他你要来报复我，我随时恭候的到来。<br>
+这篇小说通篇看下来毫无压力看完后还有点爽，我内心也住着个侠客，但是如果在现代为人不圆滑就会成为别人砧板上的鱼肉，少爷与”豪猪“他们虽然成功了，但是也失去了教师的工作，少爷从40元/月的工作去到了25元/月的工作而且还很辛苦，写到这里我想到了一个很中二的台词：”错的不是我，而是这个世界“在文章的结尾夏目漱石还写了一段关于清婆的事情清婆死与肝炎，缺少清婆的少爷如何在这个两面三刀的世界上活着，在往后的几年里少爷是否还能保持初心呢？是否成为了与这个世界同流合污的那一类人呢？现在问题仿佛就像是在问读者。</p>
+
             </div>
-            <hr>
-            <div style="text-align:center">
-              <span class="with-love">
-                <i class="fa fa-heart"></i>
-              </span>
-              留言添加友链
-              <span class="with-love">
-                <i class="fa fa-heart"></i>
-              </span>
-            </div>
-            <hr>
-            <div class="friends-note">
-              <p><strong>友链格式：</strong></p>
-              <ul>
-                <li>网站名称：枫糖</li>
-                <li>网站地址：<a href="https://blog.maplesugar.space" data-pjax-state="">https://blog.maplesugar.space</a>
-                </li>
-                <li> 网站描述：From rookie to master</li>
-                <li> 网站 Logo / 头像：<a href="https://blog.maplesugar.space/uploads/maple-leaf-avatar.jpg"
-                    data-pjax-state="">https://blog.maplesugar.space/uploads/maple-leaf-avatar.jpg</a></li>
-              </ul>
-            </div>
+            <div class="post-footer">
+  <ul class="post-copyright">
+    <li class="post-copyright-author">
+      <strong>本文作者：</strong>
+      Ruble
+    </li>
+    <li class="post-copyright-link">
+      <strong>本文链接：</strong>
+      <a href="https://rerunbug.github.io/KXm_pk_us/" title="哥儿">https://rerunbug.github.io/KXm_pk_us/</a>
+    </li>
+    <li class="post-copyright-license">
+      <strong>版权声明： </strong>
+      本博客所有文章除特别声明外，均采用<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i> BY-NC-SA</a> 许可协议。转载请注明出处！
+    </li>
+  </ul>
+  <div class="tags">
+    
+  </div>
+  <div class="nav">
+    <div class="nav-prev">
+      
+    </div>
+    <div class="nav-next">
+      
+        <a class="nav-pc-next" title="冒泡排序法" href="https://rerunbug.github.io/tQVI77KYT/">冒泡排序法</a>
+        <a class="nav-mobile-next" title="冒泡排序法" href="https://rerunbug.github.io/tQVI77KYT/">下一篇</a>
+        <i class="fa fa-chevron-right"></i>
+      
+    </div>
+  </div>
+</div>
             
   
 
-          </section>
+          </div>
         </div>
       </div>
     </div>
@@ -969,6 +1101,36 @@
   hljs.initHighlightingOnLoad();
 
 </script>
+    <div class="light-box" id="light_box"></div>
+<script>
+  let imgs = document.querySelectorAll('.post-body img');
+  let lightBox = document.querySelector('#light_box');
+  lightBox.addEventListener('mousedown', (e) => {
+    e.preventDefault()
+  })
+  lightBox.addEventListener('mousewheel', (e) => {
+    e.preventDefault()
+  })
+  let width = window.innerWidth * 0.8;
+  lightBox.onclick = () => {
+    let img = lightBox.querySelector('img');
+    lightBox.style = '';
+    img && img.remove();
+  }
+  imgs.forEach(item => {
+    item.onclick = function (e) {
+      let lightImg = document.createElement('img');
+      lightImg.src = this.src;
+      lightBox.style = `height: 100%; opacity: 1; background-color: rgba(0, 0, 0, 0.5);cursor: zoom-out;`;
+      lightImg.style = `width: ${width}px; border: 1px solid #fff; border-radius: 2px;`;
+      lightImg.onclick = function () {
+        lightBox.style = '';
+        this.remove();
+      }
+      lightBox.append(lightImg);
+    }
+  })
+</script>
   </div>
 </body>
 <input hidden id="copy" />
@@ -1471,6 +1633,5 @@ int main()
 
 
 <script src=" /media/js/cool.js"></script>
-
 
 </html>
