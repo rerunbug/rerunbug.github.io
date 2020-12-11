@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rerunbug.github.io</id>
     <title>Ruble</title>
-    <updated>2020-11-25T03:06:05.486Z</updated>
+    <updated>2020-12-11T07:47:22.669Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rerunbug.github.io"/>
     <link rel="self" href="https://rerunbug.github.io/atom.xml"/>
@@ -10,6 +10,18 @@
     <logo>https://rerunbug.github.io/images/avatar.png</logo>
     <icon>https://rerunbug.github.io/favicon.ico</icon>
     <rights>All rights reserved 2020, Ruble</rights>
+    <entry>
+        <title type="html"><![CDATA[追风筝的人]]></title>
+        <id>https://rerunbug.github.io/6JWVqqmzH/</id>
+        <link href="https://rerunbug.github.io/6JWVqqmzH/">
+        </link>
+        <updated>2020-12-06T13:57:51.000Z</updated>
+        <content type="html"><![CDATA[<p><img src="https://rerunbug.github.io/post-images/1607263132678.jpg" alt="" loading="lazy"><br>
+作者：[美] 卡勒德·胡赛尼<br>
+对于这本书我想说，它更像是在讲述一个真实且就好像是发生在身边是事情那样。这本书给我的力量绝非一般而是很大。时间真的可以将过去的种种冲淡吗？还是我们不愿意去面对，而选择去逃避。而真正的勇士是敢于面对生活的惨淡，敢于正视淋漓的鲜血。勇士是敢于知道这个世界的真相之后还敢于直面生活的人。<br>
+阿富汗的少爷阿米尔和其仆人哈桑。在童年时，哈桑是一个放风筝的天才，至于掉落的风筝他都能准确无误的预判到风筝掉落的地方，在阿米尔问他是怎么知道的，哈桑又反问少爷：“我有骗过你吗？<font color="red">为你，千千万万遍。</font>看到这里我就回想到了小时候也曾经有过这一段真挚的友情。<font color="red">为你，千千万万遍。</font>这句话在一个未经世事的儿童口中说出来我认为此子将来在肯定是一个很重情谊的人，是一个很值得交的朋友，但是在社会上很容易吃亏的人。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[哥儿]]></title>
         <id>https://rerunbug.github.io/KXm_pk_us/</id>
@@ -240,7 +252,7 @@ int main()
 		int a = min / 100;//百分位
 		int b = (min % 100) / 10;//十分位
 		int c = min % 10;//个分位
-		if ((a * a * a) + (b * b * b) + (c * c * c))printf(&quot;%d\n&quot;, min);
+		if ((a * a * a) + (b * b * b) + (c * c * c)==min)printf(&quot;%d\n&quot;, min);
 	}
 	return 0;
 }
@@ -310,54 +322,6 @@ int pointer(int*point,*u)
 pa=*po
 //相当于pa=pe这是间接赋值
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[秘密]]></title>
-        <id>https://rerunbug.github.io/read-mark/</id>
-        <link href="https://rerunbug.github.io/read-mark/">
-        </link>
-        <updated>2020-11-04T01:10:23.000Z</updated>
-        <summary type="html"><![CDATA[<ul>
-<li>简介
-<blockquote>
-<p>作者：东野圭吾</p>
-</blockquote>
-</li>
-<li>内容简介
-<blockquote>
-<p>平介的幸福生活在39岁那年被摧毁了。妻子带着女儿回娘家探亲，乘坐的大巴意外坠落山崖。妻子拼命护住女儿，最终伤重不治；女儿毫发未伤，但一直昏迷。妻子离世的那一刻，女儿奇迹般醒了过来。平介强忍悲痛为妻子办完葬礼，回到病房，看到女儿在熟睡，他忍不住呜咽着呼喊妻子。这时突然传来一个声音：“……公。”平介吓了一跳，却四顾无人，正疑惑时又听到了那声音：“老公，我……我在这儿。”<br>
-<img src="https://rerunbug.github.io/post-images/1604581564657.jpg" alt="" loading="lazy"></p>
-</blockquote>
-</li>
-</ul>
-]]></summary>
-        <content type="html"><![CDATA[<ul>
-<li>简介
-<blockquote>
-<p>作者：东野圭吾</p>
-</blockquote>
-</li>
-<li>内容简介
-<blockquote>
-<p>平介的幸福生活在39岁那年被摧毁了。妻子带着女儿回娘家探亲，乘坐的大巴意外坠落山崖。妻子拼命护住女儿，最终伤重不治；女儿毫发未伤，但一直昏迷。妻子离世的那一刻，女儿奇迹般醒了过来。平介强忍悲痛为妻子办完葬礼，回到病房，看到女儿在熟睡，他忍不住呜咽着呼喊妻子。这时突然传来一个声音：“……公。”平介吓了一跳，却四顾无人，正疑惑时又听到了那声音：“老公，我……我在这儿。”<br>
-<img src="https://rerunbug.github.io/post-images/1604581564657.jpg" alt="" loading="lazy"></p>
-</blockquote>
-</li>
-</ul>
-<!-- more -->
-<ul>
-<li>剧情简介
-<blockquote>
-<p>平介是一名汽车零件加工厂的工作人员。一年前升为了组长。因为年关将至厂里的业务各种多，导致不得不加班，直子是平介的妻子，藻奈美是平介的女儿。家乡有人去世了为了祭拜回去家乡，因为平介要加班，所以她们回去要乘坐大巴。平介在一篇报道中看的了“长野滑雪大巴坠崖事故”的大字标题，平介这时开始紧张了起来，因为长野滑雪大巴正是妻儿她们所乘坐的大巴啊，死亡名单里面就有她们。直子为了救藻奈美而牺牲了。在医院平介一直在藻奈美身边，医生说；由于母亲把他保护的很好，身上一点点伤都没有，现在不能说话很可能是因为受到惊吓的缘故。将近出院时藻奈美向爸爸说我是直子，直子的灵魂附身在了藻奈美身上。直子以藻奈美的身份活着。到了高中时期，情窦初开藻奈美继承了直子的美貌再加上在学校成绩都是排上号的。平介对与直子这种享受这种被人追求的感觉好像很乐在其中，对于在追求直子的人更是非常的讨厌了。由于平介对于藻奈美是他女儿，但是灵魂是他老婆这件事情很反感，毕竟想作却不能作的苦楚身为男人的都觉得很痛，所以平介就很限制直子的行动，甚至跟踪她。在直子心灰意冷的时候藻奈美的灵魂却是回来了。平介对于直子很抱歉，随着直子的灵魂一点点的消失，藻奈美的灵魂一点点的回来。平介的戒心慢慢的放下了。在一个钟表维修店，平介拿了之前的长野滑雪大巴的司机的遗物一个怀表去参加藻奈美的婚礼，新郎是那位司机的儿子。前几天藻奈美拿了妈妈出嫁时爸爸送的那枚戒指去维修店重新打造了一番。而平介拿的也是遗物双方都是遗物在婚礼现场似乎很不妙。平介顿时惊讶了，因为戒指就藏在泰迪熊上这个是平介与直子的秘密，就算直子告诉了藻奈美，她也想人妈妈看她的婚礼，但是完全没有必要重新搞过一遍啊。只有一个可能了，直子还活着，九年来她都在演戏，演直子慢慢消失的戏。平介不敢相信，他想的结果他立马跑去了婚礼现场去看看直子的反应、表情。原文中；<u>爸爸，她说，这么长时间以来，真的是好长好长时间以来，多亏您的照顾....她的声音已经哽咽了。</u><br>
-<strong>读书笔记</strong><br>
-<font color="bule">正所谓一千个读者就有一千个哈姆雷特</font>这里的想法就属于个人的愚见仅供参考。<br>
-<font color="green">秘密</font>在百度百科中的解释释义：<font color="bule">1、指有所隐蔽，不为人知；2、隐蔽不为人知的事情或事物；3、佛教指隐秘深奥之法。4、隐蔽；不让人知道的。亦指隐蔽不让人知道的事情。</font>这本是叫《秘密》很显然这里是指第1，2，4的意思了，结合本书的平介与藻奈美和直子，他们之间必有一个或者全部都有隐瞒的事情，藻奈美为了安慰父亲失去妻子痛自己也不相信妈妈为了保护她而死去了。在极强的压力下出现了直子的人格。平介也可能知道藻奈美是在骗他，但是他也愿意深陷其中。这件事是他们三个人之间秘密。<br>
-另外这本小说还有一个矛点，直子在见了文也（新郎）之后九里都没见过面了，第一次见面是在他们家里一起吃饭的时候就看了一眼迟疑了一下，在之前的剧情里直子对于司机家还是有点怀恨的，况且我不相信这个世界上有一见钟情的说法，一见钟情的背后必有极大的阴谋，直子嫁过去很可能是报复他的<br>
-又或者是真的是为了在创造藻奈美的人出现，毕竟平介的生命是有限的，他们的秘密在平介死后的时间，没人会相信他们的秘密了，如果直子一直以这种状态下去很可能会怀恨一辈子</p>
-</blockquote>
-</li>
-</ul>
 ]]></content>
     </entry>
 </feed>
