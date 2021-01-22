@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rerunbug.github.io</id>
     <title>Ruble</title>
-    <updated>2021-01-17T12:11:21.630Z</updated>
+    <updated>2021-01-22T06:29:16.841Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rerunbug.github.io"/>
     <link rel="self" href="https://rerunbug.github.io/atom.xml"/>
@@ -11,13 +11,12 @@
     <icon>https://rerunbug.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Ruble</rights>
     <entry>
-        <title type="html"><![CDATA[snow]]></title>
-        <id>https://rerunbug.github.io/_jNZEphCG/</id>
-        <link href="https://rerunbug.github.io/_jNZEphCG/">
+        <title type="html"><![CDATA[有趣]]></title>
+        <id>https://rerunbug.github.io/rviv-4Gnb/</id>
+        <link href="https://rerunbug.github.io/rviv-4Gnb/">
         </link>
-        <updated>2021-01-17T12:07:41.000Z</updated>
-        <content type="html"><![CDATA[<p>.</p>
-]]></content>
+        <updated>2021-01-22T06:27:39.000Z</updated>
+        <content type="html"><![CDATA[<iframe src="http://www.staggeringbeauty.com/" style="border: 1px inset #ddd" width="600" height="600"></iframe>]]></content>
     </entry>
     <entry>
         <title type="html"><![CDATA[高速复习HTML]]></title>
