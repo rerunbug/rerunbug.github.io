@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rerunbug.github.io</id>
     <title>Ruble</title>
-    <updated>2021-06-26T14:11:32.546Z</updated>
+    <updated>2021-06-30T07:48:46.756Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rerunbug.github.io"/>
     <link rel="self" href="https://rerunbug.github.io/atom.xml"/>
@@ -10,6 +10,16 @@
     <logo>https://rerunbug.github.io/images/avatar.png</logo>
     <icon>https://rerunbug.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Ruble</rights>
+    <entry>
+        <title type="html"><![CDATA[poplay直播源]]></title>
+        <id>https://rerunbug.github.io/t_0qzRAKS/</id>
+        <link href="https://rerunbug.github.io/t_0qzRAKS/">
+        </link>
+        <updated>2021-06-30T07:47:32.000Z</updated>
+        <content type="html"><![CDATA[<p>https://iptv-org.github.io/iptv/index.m3u</p>
+<p>https://github.com/imDazui/Tvlist-awesome-m3u-m3u8#%E6%8F%92%E4%BB%B6</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[关于Java中方法中的形参为类的问题]]></title>
         <id>https://rerunbug.github.io/_nxRvZmyc/</id>
@@ -348,39 +358,6 @@ int main()
 	return 0;
 }
 </code></pre>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[后翼弃兵 The Queen's Gambit]]></title>
-        <id>https://rerunbug.github.io/PM85vW1Lf/</id>
-        <link href="https://rerunbug.github.io/PM85vW1Lf/">
-        </link>
-        <updated>2020-11-05T14:47:39.000Z</updated>
-        <content type="html"><![CDATA[<p><img src="https://rerunbug.github.io/post-images/1604587726375.jpg" alt="" loading="lazy"><br>
-<a href="https://movie.douban.com/subject/32579283/?tag=%E7%83%AD%E9%97%A8&amp;from=gaia">豆瓣直达</a><br>
-<strong>Netflix出品必属精品</strong><br>
-由于博主也不懂国际象棋所以我尽量不讲国际象棋有关。<br>
-<strong>规制</strong><br>
-国际象棋是双方对下的，一方用白棋，一方用黑棋。对局由执白者先行，每次走一步，双方轮流行棋，直到对局结束。各种棋子的一般走法如下：<br>
-王（K）：横、直、斜都可以走，但每次限走一步。王是不可以送吃的，即任何被敌方控制的格子，己方王都不能走进去。否则，算“送王”犯规，三次就要判负。<br>
-（1）除易位时外，王可走到不被对方棋子攻击的任何相邻格子，而且只能走一步（着）。<br>
-（2）易位是由王和己方任何一个车一起进行的仍被视作王的一步（着）的走法。<br>
-后（Q）：横、直、斜都可以走，步数不受限制，但不能越子。<br>
-车（R）：横、竖均可以走，步数不受限制，不能斜走。除王车易位外不能越子。<br>
-象（B）：只能斜走。格数不限，不能越子。开局时每方有两象，一个占白格，一个占黑格。<br>
-马（N）：每步棋先横走或直走一格，然后再往外斜走一格；或者先斜走一格，最后再往外横走或竖走一格（即走“日”字）。可以越子，没有中国象棋中的“蹩马腿”限制。<br>
-兵（P）：只能向前直走，每次只能走一格。但走第一步时，可以走一格或两格。兵的吃子方法与行棋方向不一样，它是直走斜吃，即如果兵的斜进一格内有对方棋子，就可以吃掉它而占据该格<br>
-<font color="red"><strong>影评：</strong></font><br>
-后翼弃兵，英文 The Queen's Gambit 又可以翻译为《女王的棋局》无论怎么翻译其实都是围绕一个中心问题来叙述的，关于独立，自由的话题<br>
-这里有一个很典型的人物就是女主的后妈<br>
-<img src="https://rerunbug.github.io/post-images/1604989886115.png" alt="" loading="lazy"><br>
-她前期没有老公的她犹如行尸走肉一般，老公去出差自己在家里没有事情干，为此精神涣散、情绪容易失控。他老公本以为买了一台钢琴给她或许会好一些，没想到她依旧没有改变嗑药的习惯随着老公的出差次数越多她更依赖药物了。在得知她的老公无法回来了，她就彻底崩溃了。但是女主比较争气在比赛中拿下的第一并且获得的500美金，后妈看到女儿这样。她也随之坚强了起来，在交际上帮女主拜托一切烦恼，赛后听她女儿讲一些她完全不懂的国际象棋。为了儿时的梦想见了小时候的笔友，在笔友甩了她。她也没有为之伤心。并且整理好包袱在女儿的比赛的地方，演奏钢琴。但是好景不长她在当家庭主妇的时候落下很的病症，最后死与肝炎，在死后老公都没有多问她是怎么死的。后妈从一个家庭主妇变成了一个走向独立的女性。如果她还活着我相信她一定会成为一名很厉害的妈妈。<br>
-<img src="https://rerunbug.github.io/post-images/1604991209663.png" alt="" loading="lazy"><br>
-在女主的高中学校，有一个社团搞的差不多是名媛的东西。年轻是在高中很风光，但是她成年后推这婴儿车在逛她在年轻的很瞧不起的超市买，打折的东西。在生活满是依赖她的丈夫没一点点的独立性。<br>
-<img src="https://rerunbug.github.io/post-images/1604991418407.png" alt="" loading="lazy"><br>
-女主在孤儿院的时候和这位黑人女性玩得最好，她在得知女主被领养的时候非常气，为此她把女主的国际象棋的书拿走了。她很厉害，没有人领养她，她靠自己考上了大学学法的，并且学习期间赚了一些小钱给了女主参加比赛。与女主情同手足，相互扶持。看到她我想到的是，命运是掌握在自己手中的。不要让别人来告诉你该怎么做。她得知自己不会被领养的时候，已经知道这个定局了，她无法改变什么，但是她可以学习改变自己的命运，实际上她的确做到了，而且还很完美。</p>
-<p>女主她很有魅力，在她青春时期也向男性显露出的她的魅力（有一说一我也被她撩到了）前前后后三次撩汉子，但是她没有依靠这些东西来获取别人的认同，她更想在比赛中得到别人的认同。在开头的封面我们可以看到女主的桌子上有很多酒和一个装这绿色药丸的瓶子。女主一直依靠这些来获得胜利的，每次用这些药丸她就可以打开新世界为此她以为是这些药物帮助她的。这些药物具有上瘾性的。在输个一个俄罗斯的大神后她就愈加依靠这些东西来慰及自己的心灵。把自己搞得不人不鬼样子，在她彻底完蛋的时候她的朋友来（上文）了帮她了。<br>
-她慢慢的走出了，上瘾的状态，在决赛的时候没有依靠那些药物来维持她，她彻底摆脱了药物的依赖，并且战胜了俄罗斯的大神。写到这里我突然想到了高中时期一篇作文题目叫；有一些行李只能我们左肩换右肩来扛。我想这里很适合这个题目。在未来的未来我们必定有妻子（丈夫）和子女。在我们最危机的时候，我们可以依靠他们，但是也不能全依靠他们，他们或许自己都顾不上了，变心了。在何时何地我们的都应该有属于自己的一技之长，这样命运才不会由别人来规定。如果一直依靠别人我们始终都不会长大。一直在温室里的花朵，如果去到了外面经历了一些风吹雨打必定会“折断”。但是也不是提倡去冒险，比如说爱因斯坦现在在一直有内战的国家，你想想他还会有今天如此的成就吗？答案很明显了。我们要在父母健在的时候多多的出去历练，去多多接触外面的人和事。一直依靠别人始终都不是方法的。</p>
 ]]></content>
     </entry>
 </feed>

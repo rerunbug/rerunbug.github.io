@@ -8,7 +8,7 @@
 <meta name="keywords" content="个人领悟，茶余饭后">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
-<title>关于Java中方法中的形参为类的问题 | Ruble</title>
+<title>poplay直播源 | Ruble</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1625039324315">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
@@ -29,8 +29,8 @@
 
 
 
-  <meta name="description" content="关于Java中方法中的形参为类的问题" />
-  <meta name="keywords" content="Java" />
+  <meta name="description" content="poplay直播源" />
+  <meta name="keywords" content="" />
 </head>
 
 <body>
@@ -309,8 +309,8 @@
           <div class="section bg-color post post-page">
             <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://rerunbug.github.io/_nxRvZmyc/">
-      关于Java中方法中的形参为类的问题
+    <a class="post-title-link" href="https://rerunbug.github.io/t_0qzRAKS/">
+      poplay直播源
     </a>
   </h1>
   <div class="post-meta">
@@ -318,119 +318,25 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
-      <span>2021-06-26</span>
+      <span>2021-06-30</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
-      <i class="fa fa-folder-o"></i>
-      <span class="pc-show">分类于</span>
-      
-      
-      <a href="https://rerunbug.github.io/TNnIjC3D9/">
-        <span>Java</span>
-      </a>
-      
-      
-    </span>
-    <span class="post-meta-divider">|</span>
-    
-    <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>4分钟</span>
+      <span>1分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>549<span class="pc-show">字数</span></span>
+      <span>22<span class="pc-show">字数</span></span>
     </span>
     
   </div>
 </header>
             <div class="post-body next-md-body" id="post_body">
-              <pre><code class="language-java">import java.util.*;
-
-class Circle2D{
-    private double x, y,radius;
-    public void getLocation(double x, double y){
-        this.x = x;
-        this.y = y;
-    }
-    public void getRadius(double r){
-        radius=r;
-    }
-    Circle2D(){
-        this.x = 0;
-        this.y = 0;
-        this.radius =1;
-    }
-    Circle2D(double x, double y,double radius){
-        this.x = x;
-        this.y = y;
-        this.radius = radius;
-        // System.out.println(&quot;The area is &quot;+getArea());
-        // System.out.println(&quot;The perimeter is &quot;+getPerimeter());
-    }
-    public double getArea(){
-        return Math.PI*Math.pow(this.radius, 2);
-    }
-    public double getPerimeter(){
-        return Math.PI*this.radius*2;
-    }
-    public boolean contains(double M,double N){
-        if((Math.pow(M-this.x,2)+Math.pow(N-this.y,2))&gt;Math.pow(this.radius, 2)){
-            return true;
-        }
-        else
-        return false;
-    }
-    // 两圆之间内切 d=r1-r2
-    // 两圆之间内含 d&lt;r1-r2
-    // d 为两圆圆心的坐标应用两点间的距离公式
-    public boolean contains(Circle2D circle) {
-        return Math.pow((circle.x-this.x),2)+Math.pow((circle.y-this.y),2)&lt;=Math.abs(circle.radius-this.radius);
-        //d&lt;=R-r;
-    }
-    public boolean overlaps(Circle2D circle) {
-        return Math.pow((circle.x-this.x),2)+Math.pow((circle.y-this.y),2)&gt;Math.abs(circle.radius-this.radius)&amp;&amp;Math.pow((circle.x-this.x),2)+Math.pow((circle.y-this.y),2)&lt;circle.radius+this.radius;
-        //R-r&lt;d&lt;R+r
-    }
-} 
-
-public class Circle2DTest {
-    static Circle2D cl=new Circle2D();
-    private static void cl(Circle2D circle2d) {
-        System.out.println(&quot;The area is &quot;+circle2d.getArea());
-        System.out.println(&quot;The perimeter is &quot;+circle2d.getPerimeter());
-    }
-    
-    public static void main(String[] args) {
-        cl(new Circle2D(2,2,5.5));
-        System.out.println(&quot;The points contains is &quot;+cl.contains(3,3));
-        System.out.println(&quot;The circle contains is &quot;+cl.contains(new Circle2D(4,5,10.5)));
-        System.out.println(&quot;The circle contains is &quot;+cl.contains(new Circle2D(3,5,2.3)));
-    }
-}
-</code></pre>
-<p>注意Circle2DTest类中的方法cl，形参为Circle2D circle2d 如果想要调用其类中的成员变量和方法必须得<strong>变量名.方法</strong>，我们可以把该形参看做（数据类型 变量名）的命名方式。</p>
-<p>如果不这样做会导致该方法使用默认值来返回一个一个数值</p>
-<p>错误案例</p>
-<pre><code class="language-java">public class Circle2DTest {
-    static Circle2D cl=new Circle2D();
-    private static void cl(Circle2D circle2d) {
-        System.out.println(&quot;The area is &quot;+cl.getArea());
-        System.out.println(&quot;The perimeter is &quot;+cl.getPerimeter());
-    }
-    
-    public static void main(String[] args) {
-        cl(new Circle2D(2,2,5.5));
-        System.out.println(&quot;The points contains is &quot;+cl.contains(3,3));
-        System.out.println(&quot;The circle contains is &quot;+cl.contains(new Circle2D(4,5,10.5)));
-        System.out.println(&quot;The circle contains is &quot;+cl.contains(new Circle2D(3,5,2.3)));
-    }
-}
-</code></pre>
-<p>如果这样子就会引用到Circle2D类中的方法Circle2D的无参构造了</p>
+              <p>https://iptv-org.github.io/iptv/index.m3u</p>
+<p>https://github.com/imDazui/Tvlist-awesome-m3u-m3u8#%E6%8F%92%E4%BB%B6</p>
 
             </div>
             <div class="post-footer">
@@ -441,7 +347,7 @@ public class Circle2DTest {
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://rerunbug.github.io/_nxRvZmyc/" title="关于Java中方法中的形参为类的问题">https://rerunbug.github.io/_nxRvZmyc/</a>
+      <a href="https://rerunbug.github.io/t_0qzRAKS/" title="poplay直播源">https://rerunbug.github.io/t_0qzRAKS/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -450,21 +356,15 @@ public class Circle2DTest {
   </ul>
   <div class="tags">
     
-      <a href="https://rerunbug.github.io/TNnIjC3D9/"># Java</a>
-    
   </div>
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="poplay直播源" href="https://rerunbug.github.io/t_0qzRAKS/">poplay直播源</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="poplay直播源" href="https://rerunbug.github.io/t_0qzRAKS/">上一篇</a>
-      
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="追风筝的人" href="https://rerunbug.github.io/6JWVqqmzH/">追风筝的人</a>
-        <a class="nav-mobile-next" title="追风筝的人" href="https://rerunbug.github.io/6JWVqqmzH/">下一篇</a>
+        <a class="nav-pc-next" title="关于Java中方法中的形参为类的问题" href="https://rerunbug.github.io/_nxRvZmyc/">关于Java中方法中的形参为类的问题</a>
+        <a class="nav-mobile-next" title="关于Java中方法中的形参为类的问题" href="https://rerunbug.github.io/_nxRvZmyc/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>
