@@ -8,7 +8,7 @@
 <meta name="keywords" content="个人领悟，茶余饭后">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
-<title>插入排序法 | Ruble</title>
+<title>swing(Java) | Ruble</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1625327202389">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
@@ -29,7 +29,7 @@
 
 
 
-  <meta name="description" content="插入排序法" />
+  <meta name="description" content="swing(Java)" />
   <meta name="keywords" content="" />
 </head>
 
@@ -309,8 +309,8 @@
           <div class="section bg-color post post-page">
             <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://rerunbug.github.io/RQJCmKtJJ/">
-      插入排序法
+    <a class="post-title-link" href="https://rerunbug.github.io/21mnGmFrR/">
+      swing(Java)
     </a>
   </h1>
   <div class="post-meta">
@@ -318,62 +318,46 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
-      <span>2020-11-14</span>
+      <span>2021-07-02</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>2分钟</span>
+      <span>1分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>190<span class="pc-show">字数</span></span>
+      <span>112<span class="pc-show">字数</span></span>
     </span>
     
   </div>
 </header>
             <div class="post-body next-md-body" id="post_body">
-              <p><img src="https://rerunbug.github.io/post-images/1605366613526.png" alt="" loading="lazy"><br>
-<img src="https://rerunbug.github.io/post-images/1605366622087.png" alt="" loading="lazy"></p>
-<pre><code class="language-cpp">#include&lt;stdio.h&gt;
-//按顺序输出数组元素
-void trace(int A[], int N)
-{
-	int i;
-	for (i = 0; i &lt; N; i++) {
-		if (i &gt; 0)printf(&quot; &quot;);//在相邻元素之间输出1个空格
-		printf(&quot;%d&quot;, A[i]);
-	}
-	printf(&quot;\n&quot;);
-}
-//插入排序（0起点数组）
-void insertionSort(int A[], int N) {
-	int j, i, v;
-	for (i = 1; i &lt; N; i++) {
-		v = A[i];
-		j = i - 1;
-		while (j &gt;= 0 &amp;&amp; A[j] &gt; v) {
-			A[j + 1] = A[j];
-			j--;
-		}
-		A[j + 1] = v;
-		trace(A, N);
-	}
-}
-int main() {
-	int N, i;
-	int A[100];
-	scanf_s(&quot;%d&quot;, &amp;N);
-	for (i = 0; i &lt; N; i++)scanf_s(&quot;%d&quot;, &amp;A[i]);
-	trace(A, N);
-	insertionSort(A, N);
-	return 0;
-}
+              <p>鼠标事件：<br>
+mouseReleased //鼠标释放事件<br>
+mousePressed  // 鼠标按下事件<br>
+mouseExited     //鼠标退出<br>
+mouseEntered  //鼠标进入<br>
+mouseClicked   //鼠标点击</p>
+<pre><code class="language-java">
+				int btn = e.getButton();// 获取用户点击的是哪个键
+				switch (btn) {
+				case MouseEvent.BUTTON1: {// 鼠标左键
+					textArea.append(&quot;点击了鼠标左键\n&quot;);
+					break;
+				}
+				case MouseEvent.BUTTON2: {// 鼠标滚轮键
+					textArea.append(&quot;点击了鼠标滚轮键\n&quot;);
+					break;
+				}
+				case MouseEvent.BUTTON3: {// 鼠标右键
+					textArea.append(&quot;点击了鼠标右键\n&quot;);
+					break;
+
+
 </code></pre>
-<p>第一次循环a[0]和a[1]作对比如果a[0]大于等于0并且大于a[1]<br>
-就把a[0]的值与a[1]的值交换。</p>
 
             </div>
             <div class="post-footer">
@@ -384,7 +368,7 @@ int main() {
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://rerunbug.github.io/RQJCmKtJJ/" title="插入排序法">https://rerunbug.github.io/RQJCmKtJJ/</a>
+      <a href="https://rerunbug.github.io/21mnGmFrR/" title="swing(Java)">https://rerunbug.github.io/21mnGmFrR/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -398,14 +382,14 @@ int main() {
     <div class="nav-prev">
       
         <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="冒泡排序法" href="https://rerunbug.github.io/tQVI77KYT/">冒泡排序法</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="冒泡排序法" href="https://rerunbug.github.io/tQVI77KYT/">上一篇</a>
+        <a class="nav-pc-next" title="java中所以事件监听器接口（总结）" href="https://rerunbug.github.io/jk9k7Kn-w/">java中所以事件监听器接口（总结）</a class="nav-pc-next">
+        <a class="nav-mobile-prev" title="java中所以事件监听器接口（总结）" href="https://rerunbug.github.io/jk9k7Kn-w/">上一篇</a>
       
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="Using Git" href="https://rerunbug.github.io/UEcFGE4HJ/">Using Git</a>
-        <a class="nav-mobile-next" title="Using Git" href="https://rerunbug.github.io/UEcFGE4HJ/">下一篇</a>
+        <a class="nav-pc-next" title="poplay直播源" href="https://rerunbug.github.io/t_0qzRAKS/">poplay直播源</a>
+        <a class="nav-mobile-next" title="poplay直播源" href="https://rerunbug.github.io/t_0qzRAKS/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>
