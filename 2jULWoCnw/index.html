@@ -8,7 +8,7 @@
 <meta name="keywords" content="个人领悟，茶余饭后">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
-<title>swing(Java) | Ruble</title>
+<title>【Java】 彩票模拟器 | Ruble</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1625489821751">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
@@ -29,7 +29,7 @@
 
 
 
-  <meta name="description" content="swing(Java)" />
+  <meta name="description" content="【Java】 彩票模拟器" />
   <meta name="keywords" content="" />
 </head>
 
@@ -309,8 +309,8 @@
           <div class="section bg-color post post-page">
             <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://rerunbug.github.io/21mnGmFrR/">
-      swing(Java)
+    <a class="post-title-link" href="https://rerunbug.github.io/2jULWoCnw/">
+      【Java】 彩票模拟器
     </a>
   </h1>
   <div class="post-meta">
@@ -318,44 +318,330 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
-      <span>2021-07-02</span>
+      <span>2021-07-05</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
-      <span>1分钟</span>
+      <span>8分钟</span>
     </span>
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>112<span class="pc-show">字数</span></span>
+      <span>1189<span class="pc-show">字数</span></span>
     </span>
     
   </div>
 </header>
             <div class="post-body next-md-body" id="post_body">
-              <p>鼠标事件：<br>
-mouseReleased //鼠标释放事件<br>
-mousePressed  // 鼠标按下事件<br>
-mouseExited     //鼠标退出<br>
-mouseEntered  //鼠标进入<br>
-mouseClicked   //鼠标点击</p>
-<pre><code class="language-java">
-				int btn = e.getButton();// 获取用户点击的是哪个键
-				switch (btn) {
-				case MouseEvent.BUTTON1: {// 鼠标左键
-					textArea.append(&quot;点击了鼠标左键\n&quot;);
-					break;
-				}
-				case MouseEvent.BUTTON2: {// 鼠标滚轮键
-					textArea.append(&quot;点击了鼠标滚轮键\n&quot;);
-					break;
-				}
-				case MouseEvent.BUTTON3: {// 鼠标右键
-					textArea.append(&quot;点击了鼠标右键\n&quot;);
-					break;
+              <pre><code class="language-java">import javax.swing.*;
+import javax.swing.border.EmptyBorder;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+/*
+ * Created by JFormDesigner on Mon Jul 05 17:54:45 CST 2021
+ */
 
+
+/**
+ * @author Ruble
+ */
+public class shuangseqiu extends JFrame {
+
+
+    public shuangseqiu() {
+        initComponents();
+    }
+
+    private void cancelButtonActionPerformed(ActionEvent e) {
+        // TODO add your code here
+        System.exit(0);
+    }
+
+    private void okButtonActionPerformed(ActionEvent e) {
+        // TODO add your code here
+//        double ran=Math.random()*100;
+//        textField10.setText(String.valueOf((int)ran));
+        double[] ran = new double[7];
+        for (int i = 0; i &lt; ran.length; i++) {
+            ran[i] = Math.random() * (49 - 1) + 1;
+        }
+        textField10.setText(String.valueOf((int) ran[0]));
+        textField11.setText(String.valueOf((int) ran[1]));
+        textField12.setText(String.valueOf((int) ran[2]));
+        textField13.setText(String.valueOf((int) ran[3]));
+        textField14.setText(String.valueOf((int) ran[4]));
+        textField15.setText(String.valueOf((int) ran[5]));
+        textField16.setText(String.valueOf((int) ran[6]));
+//        private JTextField textField17;
+//        JTextField textField17;
+        int[] yzhen=new int[7];
+        yzhen[0]= Integer.parseInt(textField17.getText());
+        yzhen[1]= Integer.parseInt(textField18.getText());
+        yzhen[2]= Integer.parseInt(textField19.getText());
+        yzhen[3]= Integer.parseInt(textField20.getText());
+        yzhen[4]= Integer.parseInt(textField21.getText());
+        yzhen[5]= Integer.parseInt(textField22.getText());
+        yzhen[6]= Integer.parseInt(textField23.getText());
+
+        if (!(yzhen[0] == ran[0] &amp;&amp; yzhen[1]==ran[1] &amp;&amp; yzhen[2]==ran[2] &amp;&amp; yzhen[3]==ran[3] &amp;&amp; yzhen[4]==ran[4] &amp;&amp; yzhen[5]==ran[5] &amp;&amp; yzhen[6]==ran[6])) {
+            JOptionPane.showConfirmDialog(null,&quot;你没有中奖！！！&quot;,&quot;NOTE&quot;,0);
+        }
+        else {
+            JOptionPane.showConfirmDialog(null,&quot;恭喜你把所有的运气都花在了这个模拟器上！！！&quot;,&quot;哈哈&quot;,0);
+        }
+//        for (int i = 0; i &lt; ran.length; i++) {
+//
+////            System.out.println((int)ran[i]);
+//        }
+
+        }
+
+        private void helpButtonActionPerformed (ActionEvent e){
+            // TODO add your code here
+            JOptionPane.showConfirmDialog(null, &quot;可以让你明白为啥你买彩票中不了&quot;, &quot;哈哈&quot;, 2);
+        }
+
+        private void thisWindowClosing (WindowEvent e){
+            // TODO add your code here
+            System.exit(0);
+        }
+
+        private void initComponents () {
+            // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
+            dialogPane = new JPanel();
+            contentPanel = new JPanel();
+            textField10 = new JTextField();
+            textField11 = new JTextField();
+            textField12 = new JTextField();
+            textField13 = new JTextField();
+            textField14 = new JTextField();
+            textField15 = new JTextField();
+            textField16 = new JTextField();
+            textField17 = new JTextField();
+            textField18 = new JTextField();
+            textField19 = new JTextField();
+            textField20 = new JTextField();
+            textField21 = new JTextField();
+            textField22 = new JTextField();
+            textField23 = new JTextField();
+            label1 = new JLabel();
+            buttonBar = new JPanel();
+            okButton = new JButton();
+            helpButton = new JButton();
+            cancelButton = new JButton();
+
+            //======== this ========
+            setTitle(&quot;\u5f69\u7968\u6a21\u62df\u5668&quot;);
+            addWindowListener(new WindowAdapter() {
+                @Override
+                public void windowClosing(WindowEvent e) {
+                    thisWindowClosing(e);
+                }
+            });
+            Container contentPane = getContentPane();
+            contentPane.setLayout(new BorderLayout());
+
+            //======== dialogPane ========
+            {
+                dialogPane.setBorder(new EmptyBorder(12, 12, 12, 12));
+                dialogPane.setLayout(new BorderLayout());
+
+                //======== contentPanel ========
+                {
+
+                    //---- textField10 ----
+                    textField10.setAutoscrolls(false);
+                    textField10.setVerifyInputWhenFocusTarget(false);
+
+                    //---- textField11 ----
+                    textField11.setAutoscrolls(false);
+                    textField11.setVerifyInputWhenFocusTarget(false);
+
+                    //---- textField12 ----
+                    textField12.setAutoscrolls(false);
+                    textField12.setVerifyInputWhenFocusTarget(false);
+
+                    //---- textField13 ----
+                    textField13.setAutoscrolls(false);
+                    textField13.setVerifyInputWhenFocusTarget(false);
+
+                    //---- textField14 ----
+                    textField14.setAutoscrolls(false);
+                    textField14.setVerifyInputWhenFocusTarget(false);
+
+                    //---- textField15 ----
+                    textField15.setAutoscrolls(false);
+                    textField15.setVerifyInputWhenFocusTarget(false);
+
+                    //---- textField16 ----
+                    textField16.setAutoscrolls(false);
+                    textField16.setVerifyInputWhenFocusTarget(false);
+
+                    //---- textField17 ----
+                    textField17.setAutoscrolls(false);
+                    textField17.setVerifyInputWhenFocusTarget(false);
+
+                    //---- textField18 ----
+                    textField18.setAutoscrolls(false);
+                    textField18.setVerifyInputWhenFocusTarget(false);
+
+                    //---- textField19 ----
+                    textField19.setAutoscrolls(false);
+                    textField19.setVerifyInputWhenFocusTarget(false);
+
+                    //---- textField20 ----
+                    textField20.setAutoscrolls(false);
+                    textField20.setVerifyInputWhenFocusTarget(false);
+
+                    //---- textField21 ----
+                    textField21.setAutoscrolls(false);
+                    textField21.setVerifyInputWhenFocusTarget(false);
+
+                    //---- textField22 ----
+                    textField22.setAutoscrolls(false);
+                    textField22.setVerifyInputWhenFocusTarget(false);
+
+                    //---- textField23 ----
+                    textField23.setAutoscrolls(false);
+                    textField23.setVerifyInputWhenFocusTarget(false);
+
+                    //---- label1 ----
+                    label1.setText(&quot;\u4f60\u4e70\u7684\u53f7&quot;);
+
+                    GroupLayout contentPanelLayout = new GroupLayout(contentPanel);
+                    contentPanel.setLayout(contentPanelLayout);
+                    contentPanelLayout.setHorizontalGroup(
+                        contentPanelLayout.createParallelGroup()
+                            .addGroup(contentPanelLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addGroup(contentPanelLayout.createParallelGroup()
+                                    .addGroup(contentPanelLayout.createSequentialGroup()
+                                        .addComponent(textField10, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(textField11, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(textField12, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(textField13, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(textField14, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(textField15, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(textField16, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(contentPanelLayout.createSequentialGroup()
+                                        .addGroup(contentPanelLayout.createParallelGroup()
+                                            .addComponent(label1, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(textField17, GroupLayout.Alignment.TRAILING, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE))
+                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(textField18, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(textField19, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(textField20, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(textField21, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(textField22, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(textField23, GroupLayout.PREFERRED_SIZE, 57, GroupLayout.PREFERRED_SIZE)))
+                                .addContainerGap(38, Short.MAX_VALUE))
+                    );
+                    contentPanelLayout.setVerticalGroup(
+                        contentPanelLayout.createParallelGroup()
+                            .addGroup(contentPanelLayout.createSequentialGroup()
+                                .addGap(67, 67, 67)
+                                .addGroup(contentPanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                                    .addComponent(textField10, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(textField11, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(textField12, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(textField13, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(textField14, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(textField15, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(textField16, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED, 16, Short.MAX_VALUE)
+                                .addComponent(label1, GroupLayout.PREFERRED_SIZE, 17, GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(contentPanelLayout.createParallelGroup(GroupLayout.Alignment.BASELINE)
+                                    .addComponent(textField17, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(textField18, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(textField19, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(textField20, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(textField21, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(textField22, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(textField23, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE))
+                                .addGap(31, 31, 31))
+                    );
+                }
+                dialogPane.add(contentPanel, BorderLayout.CENTER);
+
+                //======== buttonBar ========
+                {
+                    buttonBar.setBorder(new EmptyBorder(12, 0, 0, 0));
+                    buttonBar.setLayout(new GridBagLayout());
+                    ((GridBagLayout)buttonBar.getLayout()).columnWidths = new int[] {0, 85, 85, 80};
+                    ((GridBagLayout)buttonBar.getLayout()).columnWeights = new double[] {1.0, 0.0, 0.0, 0.0};
+
+                    //---- okButton ----
+                    okButton.setText(&quot;\u51fa\u53f7&quot;);
+                    okButton.addActionListener(e -&gt; okButtonActionPerformed(e));
+                    buttonBar.add(okButton, new GridBagConstraints(1, 0, 1, 1, 0.0, 0.0,
+                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                        new Insets(0, 0, 0, 5), 0, 0));
+
+                    //---- helpButton ----
+                    helpButton.setText(&quot;\u5173\u4e8e&quot;);
+                    helpButton.addActionListener(e -&gt; helpButtonActionPerformed(e));
+                    buttonBar.add(helpButton, new GridBagConstraints(2, 0, 1, 1, 0.0, 0.0,
+                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                        new Insets(0, 0, 0, 5), 0, 0));
+
+                    //---- cancelButton ----
+                    cancelButton.setText(&quot;\u9000\u51fa&quot;);
+                    cancelButton.addActionListener(e -&gt; cancelButtonActionPerformed(e));
+                    buttonBar.add(cancelButton, new GridBagConstraints(3, 0, 1, 1, 0.0, 0.0,
+                        GridBagConstraints.CENTER, GridBagConstraints.BOTH,
+                        new Insets(0, 0, 0, 0), 0, 0));
+                }
+                dialogPane.add(buttonBar, BorderLayout.SOUTH);
+            }
+            contentPane.add(dialogPane, BorderLayout.CENTER);
+            setSize(505, 295);
+            setLocationRelativeTo(getOwner());
+            // JFormDesigner - End of component initialization  //GEN-END:initComponents
+        }
+
+        // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
+        private JPanel dialogPane;
+        private JPanel contentPanel;
+        private JTextField textField10;
+        private JTextField textField11;
+        private JTextField textField12;
+        private JTextField textField13;
+        private JTextField textField14;
+        private JTextField textField15;
+        private JTextField textField16;
+        private JTextField textField17;
+        private JTextField textField18;
+        private JTextField textField19;
+        private JTextField textField20;
+        private JTextField textField21;
+        private JTextField textField22;
+        private JTextField textField23;
+        private JLabel label1;
+        private JPanel buttonBar;
+        private JButton okButton;
+        private JButton helpButton;
+        private JButton cancelButton;
+        // JFormDesigner - End of variables declaration  //GEN-END:variables
+        public static void main (String[]args){
+            new shuangseqiu().setVisible(true);
+        }
+    }
 
 </code></pre>
 
@@ -368,7 +654,7 @@ mouseClicked   //鼠标点击</p>
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://rerunbug.github.io/21mnGmFrR/" title="swing(Java)">https://rerunbug.github.io/21mnGmFrR/</a>
+      <a href="https://rerunbug.github.io/2jULWoCnw/" title="【Java】 彩票模拟器">https://rerunbug.github.io/2jULWoCnw/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -381,15 +667,11 @@ mouseClicked   //鼠标点击</p>
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="java中所以事件监听器接口（总结）" href="https://rerunbug.github.io/jk9k7Kn-w/">java中所以事件监听器接口（总结）</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="java中所以事件监听器接口（总结）" href="https://rerunbug.github.io/jk9k7Kn-w/">上一篇</a>
-      
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="poplay直播源" href="https://rerunbug.github.io/t_0qzRAKS/">poplay直播源</a>
-        <a class="nav-mobile-next" title="poplay直播源" href="https://rerunbug.github.io/t_0qzRAKS/">下一篇</a>
+        <a class="nav-pc-next" title="java中所以事件监听器接口（总结）" href="https://rerunbug.github.io/jk9k7Kn-w/">java中所以事件监听器接口（总结）</a>
+        <a class="nav-mobile-next" title="java中所以事件监听器接口（总结）" href="https://rerunbug.github.io/jk9k7Kn-w/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>
