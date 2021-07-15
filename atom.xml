@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://rerunbug.github.io</id>
     <title>Ruble</title>
-    <updated>2021-07-05T13:00:02.470Z</updated>
+    <updated>2021-07-15T05:25:49.362Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://rerunbug.github.io"/>
     <link rel="self" href="https://rerunbug.github.io/atom.xml"/>
@@ -10,6 +10,58 @@
     <logo>https://rerunbug.github.io/images/avatar.png</logo>
     <icon>https://rerunbug.github.io/favicon.ico</icon>
     <rights>All rights reserved 2021, Ruble</rights>
+    <entry>
+        <title type="html"><![CDATA[【Java】泛型]]></title>
+        <id>https://rerunbug.github.io/0_Ut4iRJS/</id>
+        <link href="https://rerunbug.github.io/0_Ut4iRJS/">
+        </link>
+        <updated>2021-07-15T03:24:36.000Z</updated>
+        <content type="html"><![CDATA[<p>Java中的泛型相当于c++中的template差不多于模板函数的功能<br>
+这里有一个比较值得注意的是Java中有一个泛型方法</p>
+<pre><code class="language-c++">
+/*
+ * @Author: your name
+ * @Date: 2021-07-15 11:56:22
+ * @LastEditTime: 2021-07-15 13:15:18
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \java\javathink\mothdFanX.java
+ */
+package javathink;
+
+class test&lt;E&gt;{
+    private E t;
+    public &lt;E&gt; E getT(E t){
+        return t;
+    }
+    public &lt;E&gt; E modthtest(E a){
+        System.out.println(&quot;Hello mothdClass  &quot;+a);
+        return null;
+    }
+    // public &lt;E&gt; E showT(E t){
+        
+    // }
+}
+
+
+
+public class mothdFanX {
+    public static void main(String[] args) {
+        test &lt;Integer&gt; a=new test&lt;Integer&gt;();
+        a.modthtest(31321);
+        test&lt;String&gt; t=new test&lt;String&gt;();
+        String es;
+        es=t.getT(&quot;aaaaa&quot;);
+        System.out.println(es);
+        test&lt;Integer&gt; i=new test&lt;Integer&gt;();
+        int ii;
+        ii=i.getT(411411);
+        System.out.println(ii);
+    }
+}
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[【Java】 彩票模拟器]]></title>
         <id>https://rerunbug.github.io/2jULWoCnw/</id>
@@ -683,41 +735,6 @@ int main() {
 </code></pre>
 <p>第一次循环a[0]和a[1]作对比如果a[0]大于等于0并且大于a[1]<br>
 就把a[0]的值与a[1]的值交换。</p>
-]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Using Git]]></title>
-        <id>https://rerunbug.github.io/UEcFGE4HJ/</id>
-        <link href="https://rerunbug.github.io/UEcFGE4HJ/">
-        </link>
-        <updated>2020-11-13T11:24:45.000Z</updated>
-        <content type="html"><![CDATA[<p><strong>Git下载链接</strong><br>
-<a href="https://gitforwindows.org/">Git</a><br>
-一路安装下去<br>
-<img src="https://rerunbug.github.io/post-images/1605267005371.jpg" alt="" loading="lazy"><br>
-按照这样设置<br>
-安装好后我们鼠标右键会发现多出了两个命令<br>
-一个是Git GUI Here   和   Git Bash Here<br>
-我们新建一个<font color="red">空</font>文件夹<br>
-然后打开这个文件夹鼠标右键按Git Bash Here<br>
-等一会会出现<br>
-<img src="https://rerunbug.github.io/post-images/1605267312288.jpg" alt="" loading="lazy"><br>
-键入git init 命令注意空格<br>
-查看文件夹的隐藏文件会发现多出一个文件.git<br>
-在gitee or github 新建好一个仓库以后。<br>
-我们键入git remote origin 加上地址<br>
-origin 可以任意名称<br>
-我们可以键入git remote -v查看是否完成了导入仓库<br>
-git add . 代表添加所用文件注意  .  的空格<br>
-git add 文件名<br>
-git status 查看添加目录<br>
-git commit -m&quot;&quot;   添加描述 必须的<br>
-git push origin master 推送到git上<br>
-有时候我们无法成功推送上去我们可以键入<br>
-git push origin master -f 命令强制推送上去<br>
-在团队项目中我们要养成push前要pull项目<br>
-git pull origin master<br>
-要不然会把之前队友的文件覆盖了的</p>
 ]]></content>
     </entry>
 </feed>

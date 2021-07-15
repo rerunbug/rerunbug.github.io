@@ -8,7 +8,7 @@
 <meta name="keywords" content="个人领悟，茶余饭后">
 <meta name="description" content="温故而知新">
 <meta name="theme-color" content="#000">
-<title>Using Git | Ruble</title>
+<title>【Java】泛型 | Ruble</title>
 <link rel="shortcut icon" href="/favicon.ico?v=1626326746868">
 <link rel="stylesheet" href="/styles/main.css">
 <link rel="stylesheet" href="/media/css/gemini.css">
@@ -29,8 +29,8 @@
 
 
 
-  <meta name="description" content="Using Git" />
-  <meta name="keywords" content="其他" />
+  <meta name="description" content="【Java】泛型" />
+  <meta name="keywords" content="" />
 </head>
 
 <body>
@@ -309,8 +309,8 @@
           <div class="section bg-color post post-page">
             <header class="post-header">
   <h1 class="post-title">
-    <a class="post-title-link" href="https://rerunbug.github.io/UEcFGE4HJ/">
-      Using Git
+    <a class="post-title-link" href="https://rerunbug.github.io/0_Ut4iRJS/">
+      【Java】泛型
     </a>
   </h1>
   <div class="post-meta">
@@ -318,22 +318,9 @@
     <span class="meta-item pc-show">
       <i class="fa fa-calendar-o"></i>
       <span>发布于</span>
-      <span>2020-11-13</span>
+      <span>2021-07-15</span>
       <span class="post-meta-divider pc-show">|</span>
     </span>
-    
-    <span class="meta-item">
-      <i class="fa fa-folder-o"></i>
-      <span class="pc-show">分类于</span>
-      
-      
-      <a href="https://rerunbug.github.io/VavAFPEec/">
-        <span>其他</span>
-      </a>
-      
-      
-    </span>
-    <span class="post-meta-divider">|</span>
     
     <span class="meta-item">
       <i class="fa fa-clock-o"></i>
@@ -342,39 +329,56 @@
     <span class="meta-item">
       <span class="post-meta-divider">|</span>
       <i class="fa fa-file-word-o"></i>
-      <span>279<span class="pc-show">字数</span></span>
+      <span>185<span class="pc-show">字数</span></span>
     </span>
     
   </div>
 </header>
             <div class="post-body next-md-body" id="post_body">
-              <p><strong>Git下载链接</strong><br>
-<a href="https://gitforwindows.org/">Git</a><br>
-一路安装下去<br>
-<img src="https://rerunbug.github.io/post-images/1605267005371.jpg" alt="" loading="lazy"><br>
-按照这样设置<br>
-安装好后我们鼠标右键会发现多出了两个命令<br>
-一个是Git GUI Here   和   Git Bash Here<br>
-我们新建一个<font color="red">空</font>文件夹<br>
-然后打开这个文件夹鼠标右键按Git Bash Here<br>
-等一会会出现<br>
-<img src="https://rerunbug.github.io/post-images/1605267312288.jpg" alt="" loading="lazy"><br>
-键入git init 命令注意空格<br>
-查看文件夹的隐藏文件会发现多出一个文件.git<br>
-在gitee or github 新建好一个仓库以后。<br>
-我们键入git remote origin 加上地址<br>
-origin 可以任意名称<br>
-我们可以键入git remote -v查看是否完成了导入仓库<br>
-git add . 代表添加所用文件注意  .  的空格<br>
-git add 文件名<br>
-git status 查看添加目录<br>
-git commit -m&quot;&quot;   添加描述 必须的<br>
-git push origin master 推送到git上<br>
-有时候我们无法成功推送上去我们可以键入<br>
-git push origin master -f 命令强制推送上去<br>
-在团队项目中我们要养成push前要pull项目<br>
-git pull origin master<br>
-要不然会把之前队友的文件覆盖了的</p>
+              <p>Java中的泛型相当于c++中的template差不多于模板函数的功能<br>
+这里有一个比较值得注意的是Java中有一个泛型方法</p>
+<pre><code class="language-c++">
+/*
+ * @Author: your name
+ * @Date: 2021-07-15 11:56:22
+ * @LastEditTime: 2021-07-15 13:15:18
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \java\javathink\mothdFanX.java
+ */
+package javathink;
+
+class test&lt;E&gt;{
+    private E t;
+    public &lt;E&gt; E getT(E t){
+        return t;
+    }
+    public &lt;E&gt; E modthtest(E a){
+        System.out.println(&quot;Hello mothdClass  &quot;+a);
+        return null;
+    }
+    // public &lt;E&gt; E showT(E t){
+        
+    // }
+}
+
+
+
+public class mothdFanX {
+    public static void main(String[] args) {
+        test &lt;Integer&gt; a=new test&lt;Integer&gt;();
+        a.modthtest(31321);
+        test&lt;String&gt; t=new test&lt;String&gt;();
+        String es;
+        es=t.getT(&quot;aaaaa&quot;);
+        System.out.println(es);
+        test&lt;Integer&gt; i=new test&lt;Integer&gt;();
+        int ii;
+        ii=i.getT(411411);
+        System.out.println(ii);
+    }
+}
+</code></pre>
 
             </div>
             <div class="post-footer">
@@ -385,7 +389,7 @@ git pull origin master<br>
     </li>
     <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://rerunbug.github.io/UEcFGE4HJ/" title="Using Git">https://rerunbug.github.io/UEcFGE4HJ/</a>
+      <a href="https://rerunbug.github.io/0_Ut4iRJS/" title="【Java】泛型">https://rerunbug.github.io/0_Ut4iRJS/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明： </strong>
@@ -394,21 +398,15 @@ git pull origin master<br>
   </ul>
   <div class="tags">
     
-      <a href="https://rerunbug.github.io/VavAFPEec/"># 其他</a>
-    
   </div>
   <div class="nav">
     <div class="nav-prev">
       
-        <i class="fa fa-chevron-left"></i>
-        <a class="nav-pc-next" title="插入排序法" href="https://rerunbug.github.io/RQJCmKtJJ/">插入排序法</a class="nav-pc-next">
-        <a class="nav-mobile-prev" title="插入排序法" href="https://rerunbug.github.io/RQJCmKtJJ/">上一篇</a>
-      
     </div>
     <div class="nav-next">
       
-        <a class="nav-pc-next" title="ESP定律" href="https://rerunbug.github.io/aREf_pDTx/">ESP定律</a>
-        <a class="nav-mobile-next" title="ESP定律" href="https://rerunbug.github.io/aREf_pDTx/">下一篇</a>
+        <a class="nav-pc-next" title="【Java】 彩票模拟器" href="https://rerunbug.github.io/2jULWoCnw/">【Java】 彩票模拟器</a>
+        <a class="nav-mobile-next" title="【Java】 彩票模拟器" href="https://rerunbug.github.io/2jULWoCnw/">下一篇</a>
         <i class="fa fa-chevron-right"></i>
       
     </div>
